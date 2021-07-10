@@ -6,17 +6,17 @@
 
 const user_intention = document.querySelector("#user_intention");
 
-function scrollToTop() {
+function scrollToTop(target) {
   // user_intention.scrollIntoView(true); // Top
-  user_intention_container.scrollIntoView({
+  target.scrollIntoView({
     behavior: "smooth",
-    block: "end",
-    inline: "nearest"
+    block: 'center',
+    inline: "center"
   });
 }
 
-function scrollToBottom() {
-  user_intention.scrollIntoView(false); // Bottom
-}
+// function scrollToBottom() {
+//   user_intention.scrollIntoView(false); // Bottom
+// }
 
 

@@ -46,8 +46,10 @@ h1{
 }
 
 #spacer{
-    background-color: pink;
+    background-color: lightsteelblue;
+    height: 800px;
 }
+
 
 .biodata_title{
     margin:10px
@@ -58,11 +60,47 @@ h1{
 
 }
 
-#spacer {
-    height: 800px
+#user_intention_container{
+    display:inline-block;
+    background-color: salmon;
+}
+
+#layer1_container{
+    display:inline-block;
+    background-color:purple;
+    width: 10000px;
+    height: 200000px;
+}
+
+
+#urban_cycling{
+    display:inline-block;
+    background-color: seagreen;
+    width:1000px;
+    height:500px
 
 }
 
+#hybrid_cycling{
+    display:inline-block;
+    width: 1000px;
+    height: 500px;
+    background-color: lightgreen;
+}
+
+#road_cycling{
+    display:inline-block;
+    width: 1000px;
+    height: 500px;
+    background-color:pink;
+}
+
+#mountain_biking{
+    display:inline-block;
+    width: 1000px;
+    height: 500px;
+    background-color:orange;
+}
 
 /* .zoomButton {
     background-color: red;
