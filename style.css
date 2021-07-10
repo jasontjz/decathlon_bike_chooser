@@ -25,10 +25,11 @@ button{
     border-radius: 10px;
     padding: auto;
     width: 200px;
-    height: 50px;
+    height: auto;
     border: 0;
     font-family: 'roboto', sans-serif;
-    font-size:20px
+    font-size:20px;
+    cursor:pointer;
 }
 
 .user_intention_choose{
@@ -45,9 +46,13 @@ h1{
 
 }
 
-#spacer{
+.spacer{
     background-color: lightsteelblue;
     height: 800px;
+}
+
+.user_intention{
+    cursor:pointer;
 }
 
 
@@ -65,11 +70,20 @@ h1{
     background-color: salmon;
 }
 
-#layer1_container{
+#layer2_container{
     display:inline-block;
     background-color:purple;
     width: 10000px;
-    height: 200000px;
+    height: 1000px;
+}
+
+#urban_hybrid{
+    display:inline-block;
+    background-color:greenyellow;
+    width:1000px;
+    height:500px;
+    margin:100px;
+
 }
 
 
@@ -77,7 +91,8 @@ h1{
     display:inline-block;
     background-color: seagreen;
     width:1000px;
-    height:500px
+    height:500px;
+    margin:100px;
 
 }
 
@@ -86,6 +101,7 @@ h1{
     width: 1000px;
     height: 500px;
     background-color: lightgreen;
+    margin:100px;
 }
 
 #road_cycling{
@@ -93,6 +109,7 @@ h1{
     width: 1000px;
     height: 500px;
     background-color:pink;
+    margin:100px;
 }
 
 #mountain_biking{
@@ -100,7 +117,40 @@ h1{
     width: 1000px;
     height: 500px;
     background-color:orange;
+    margin:100px;
 }
+
+#layer3_container{
+    display:inline-block;
+    background-color:purple;
+    width: 10000px;
+    height: 1000px;
+}
+
+#city_folding{
+    display:inline-block;
+    width: 1000px;
+    height: 500px;
+    background-color: seagreen;
+    margin:100px;
+}
+
+#hybrid_gate2_features{
+    display:inline-block;
+    width: 1000px;
+    height: 500px;
+    background-color: lightgreen;
+    margin:100px;
+}
+
+#road_cycling_style1{
+    display:inline-block;
+    width: 1000px;
+    height: 500px;
+    background-color:pink;
+    margin:100px;
+}
+
 
 /* .zoomButton {
     background-color: red;
