@@ -1,0 +1,81 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#title {
+    background-color:#0082c3;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    width: auto;
+  }
+
+#intro_main{
+    background-color: darkgray;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    vertical-align:middle;
+    margin: 50px;
+}
+
+button{
+    background-color: #FCEB05;
+    border-radius: 10px;
+    padding: auto;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    font-family: 'roboto', sans-serif;
+    font-size:20px
+}
+
+.user_intention_choose{
+display: inline-block;
+margin: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+#biodata_container{
+    margin: 20px
+
+}
+
+#spacer{
+    background-color: pink;
+}
+
+.biodata_title{
+    margin:10px
+}
+
+.bike{
+    height: 200px;
+
+}
+
+#spacer {
+    height: 800px
+
+}
+
+
+/* .zoomButton {
+    background-color: red;
+    color: white;
+    margin-top: 10px
+}
+
+.somewhere-div {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+} */
