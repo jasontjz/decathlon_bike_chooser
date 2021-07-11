@@ -70,7 +70,7 @@ h1{
     background-color: salmon;
 }
 
-#layer2_container, #layer3_container, #layer4_container, #layer5_container, #layer6_container, #layer7_container{
+#layer2_container, #layer3_container, #layer4_container, #layer5_container, #layer6_container{
     display:inline-block;
     background-color:purple;
     width: 10000px;
@@ -122,11 +122,26 @@ h1{
 
 .bike_div{
     display:inline-block;
-    width: 300px;
+    width: 500px;
     height: 900px;
     background-color: lightyellow;
     margin: 10px;
     
+}
+
+#layer7_container{
+    display:inline-block;
+    background-color:purple;
+    width: auto;
+    height: 1000px;
+}
+
+.layer_div{
+    display:inline-block;
+    background-color: lime;
+    width: auto;
+    height: auto;
+    margin:500px; 
 }
 
 
