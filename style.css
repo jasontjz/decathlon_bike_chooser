@@ -70,7 +70,7 @@ h1{
     background-color: salmon;
 }
 
-#layer2_container{
+#layer2_container, #layer3_container, #layer4_container, #layer5_container, #layer6_container, #layer7_container{
     display:inline-block;
     background-color:purple;
     width: 10000px;
@@ -87,7 +87,7 @@ h1{
 }
 
 
-#urban_cycling{
+#urban_cycling, #city_folding, #folding_bikes, #trad_city_bikes, #city_folding, #folding_bikes_style1, #trad_city_bikes_style1, #folding_bikes_style2, #trad_city_bikes_style2{
     display:inline-block;
     background-color: seagreen;
     width:1000px;
@@ -96,7 +96,7 @@ h1{
 
 }
 
-#hybrid_cycling{
+#hybrid_cycling, #hybrid_gate2_features, #hybrid_gate3b_rugged_flexible{
     display:inline-block;
     width: 1000px;
     height: 500px;
@@ -104,7 +104,7 @@ h1{
     margin:100px;
 }
 
-#road_cycling{
+#road_cycling, #road_endurance, #road_racing, #road_cycling_style1, #road_endurance_style1, #road_racing_style1{
     display:inline-block;
     width: 1000px;
     height: 500px;
@@ -112,7 +112,7 @@ h1{
     margin:100px;
 }
 
-#mountain_biking{
+#mountain_biking, #mountain_biking_style1, #mtb_st, #mtb_xc, #mtb_am{
     display:inline-block;
     width: 1000px;
     height: 500px;
@@ -120,35 +120,13 @@ h1{
     margin:100px;
 }
 
-#layer3_container{
+.bike_div{
     display:inline-block;
-    background-color:purple;
-    width: 10000px;
-    height: 1000px;
-}
-
-#city_folding{
-    display:inline-block;
-    width: 1000px;
-    height: 500px;
-    background-color: seagreen;
-    margin:100px;
-}
-
-#hybrid_gate2_features{
-    display:inline-block;
-    width: 1000px;
-    height: 500px;
-    background-color: lightgreen;
-    margin:100px;
-}
-
-#road_cycling_style1{
-    display:inline-block;
-    width: 1000px;
-    height: 500px;
-    background-color:pink;
-    margin:100px;
+    width: 300px;
+    height: 900px;
+    background-color: lightyellow;
+    margin: 10px;
+    
 }
 
 
