@@ -120,29 +120,45 @@ h1{
     margin:100px;
 }
 
-.bike_div{
-    display:inline-block;
-    width: 500px;
-    height: 900px;
-    background-color: lightyellow;
-    margin: 10px;
-    
-}
-
 #layer7_container{
     display:inline-block;
     background-color:purple;
-    width: auto;
-    height: 1000px;
+    width: 29000px;
+    height: auto;
 }
 
+
+
 .layer_div{
-    display:inline-block;
+    display: inline-block;
     background-color: lime;
-    width: auto;
-    height: auto;
-    margin:500px; 
+    width: 840px;
+    height: 850px;
+    margin:400px;
 }
+
+.layer_div_bike{
+    display: inline-block;
+    background-color: lime;
+    width: 840px;
+    height: 850px;
+    margin:400px; 
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.bike_div{
+    position:relative;
+    left:0px;
+    right: 0px;
+    display:inline-block;
+    width: 400px;
+    height: 800px;
+    background-color: lightyellow;
+    margin: 10px;
+}
+
 
 
 /* .zoomButton {
