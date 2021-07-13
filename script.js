@@ -67,7 +67,7 @@ const bikes = [
    divId: 'bike_urbanspeed',
    parentDivId: 'divbike_urbanspeed',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1666708/k$871251272ec5a7277d9592b7ca168484/elops-urban-city-bike-speed-500-orange.jpg?f=800x800',
 },
 {
   name: 'Elops 100',
@@ -75,6 +75,7 @@ const bikes = [
    divId: 'bike_elops_100',
    parentDivId: 'divbike_elops100',
    xmlUrl:'',
+   imageUrl:'https://contents.mediadecathlon.com/p1842019/k$c70bdfe84084b6acc13ceed40f4a450d/elops-100-low-frame-26in-single-speed-city-bike-black.jpg?f=800x800',
 },
 {
   name: 'Elops 120 Green',
@@ -82,6 +83,7 @@ const bikes = [
    divId: 'bike_elops120green',
    parentDivId: 'divbike_elops120_120eu',
    xmlUrl:'',
+   imageUrl: 'https://contents.mediadecathlon.com/p1325539/k$253848c2d69b06398bdc1e1f5f8b5f5a/elops-120-low-frame-26in-6sp-city-bike-acid-green.jpg?f=800x800',
 },
 {
   name: 'Elops 120 Linen',
@@ -89,6 +91,7 @@ const bikes = [
    divId: 'bike_elops120linen',
    parentDivId: 'divbike_elops120_120eu',
    xmlUrl:'',
+   imageUrl:'https://contents.mediadecathlon.com/p1863323/k$e8ead035fc4761f4776b9fab0e102c4e/elops-120-low-frame-6sp-city-bike-linen.jpg?f=800x800',
 },
 {
   name: 'Elops 120 EU',
@@ -96,7 +99,7 @@ const bikes = [
    divId: 'bike_elops120eu',
    parentDivId: 'divbike_elops120_120eu',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1810501/k$a4464627a1d94983b784aa4fd6f1bc7d/elops-120-low-frame-city-bike-blue.jpg?f=800x800',
 },
 {
   name: 'Riverside 100',
@@ -104,15 +107,31 @@ const bikes = [
    divId: 'bike_riverside_100',
    parentDivId: 'divbike_riverside100_120',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1574676/k$3be5882a1bce6c60c24269eb54c6af5f/riverside-100-matt-bike.jpg?f=800x800',
 },
 {
-  name: 'ST 100',
+  name: 'ST 100 Black',
    objectId:'',
-   divId: 'bike_st_100',
+   divId: 'bike_st_100black',
    parentDivId: 'divbike_st100',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1490244/k$8a9d726bbe7a6d1b05ce33f131fc7f57/rockrider-st-100-275in-26in-xs-21sp-sport-bike-black.jpg?f=800x800',
+},
+{
+  name: 'ST 100 Yellow',
+   objectId:'',
+   divId: 'bike_st_100yellow',
+   parentDivId: 'divbike_st100',
+   xmlUrl:'',
+   imageUrl: 'https://contents.mediadecathlon.com/p1576602/k$55482559e608d7ead1cca914e50a3212/rockrider-st-100-275in-26in-xs-21sp-sport-bike-yellow.jpg?f=800x800',
+},
+{
+  name: 'ST 100 White',
+   objectId:'',
+   divId: 'bike_st_100white',
+   parentDivId: 'divbike_st100',
+   xmlUrl:'',
+   imageUrl: 'https://contents.mediadecathlon.com/p1617008/k$919ed9703caafb1a837d00894260abff/rockrider-st-100-275in-26in-xs-21sp-sport-bike-white.jpg?f=800x800',
 },
 {
   name: 'Riverside 500 Grey',
@@ -120,7 +139,7 @@ const bikes = [
    divId: 'bike_riverside_500grey',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1484854/k$db9135b3585b4451f788f0e177df21e7/riverside-500-disc-brake-9sp-hybrid-bike-grey-red.jpg?f=800x800',
 },
 {
   name: 'Riverside 500 Blue',
@@ -128,7 +147,7 @@ const bikes = [
    divId: 'bike_riverside_500blue',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1813731/k$e28b159d2d9db20223797d6d862eb1c9/riverside-500-disc-brake-9sp-hybrid-bike-blue.jpg?f=800x800',
 },
 {
   name: 'Riverside 500 Cloud Grey',
@@ -136,7 +155,7 @@ const bikes = [
    divId: 'bike_riverside_500cloudgrey',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1813733/k$7b5eb039c6a39dab85fffc83ff693d6c/riverside-500-disc-brake-9sp-hybrid-bike-cloud-grey.jpg?f=800x800',
 },
 {
   name: 'Riverside 900',
@@ -144,7 +163,7 @@ const bikes = [
    divId: 'bike_riverside_900',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p2036063/k$588b0700228c70f61c9744109c58dd64/riverside-900-disc-brake-10sp-hybrid-bike-light-grey.jpg?f=800x800',
 },
 {
   name: 'Triban 100',
@@ -152,15 +171,7 @@ const bikes = [
    divId: 'bike_triban_100',
    parentDivId: 'divbike_triban100_series',
    xmlUrl:'',
-   imageUrl: '',
-},
-{
-  name: 'Triban 120',
-   objectId:'',
-   divId: 'bike_triban_120',
-   parentDivId: 'divbike_triban100_series',
-   xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1662199/k$4d461294413f611f2b18751bd05f0fed/triban-rc-100-7sp-road-bike-silver.jpg?f=800x800',
 },
 {
   name: 'Triban Easy',
@@ -168,7 +179,15 @@ const bikes = [
    divId: 'bike_triban_easy',
    parentDivId: 'divbike_triban100_series',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1614833/k$43bbeec7bf27b81b9bf934a6ceef5bc6/triban-easy-8sp-road-bike-white.jpg?f=800x800',
+},
+{
+  name: 'Triban 120',
+   objectId:'',
+   divId: 'bike_triban_120',
+   parentDivId: 'divbike_triban100_series',
+   xmlUrl:'',
+   imageUrl: 'https://contents.mediadecathlon.com/p1604119/k$be03faa0a9d6698c805ddf165b3fc0e9/triban-rc-120-road-bike-8sp-grey.jpg?f=800x800',
 },
 {
   name: 'Triban Regular',
@@ -176,7 +195,7 @@ const bikes = [
    divId: 'bike_triban_regular',
    parentDivId: 'divbike_triban100_series',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1614826/k$54b05fed6cb352ecff1a9950aeacc5ea/triban-regular-sora-9sp-road-bike-white.jpg?f=800x800',
 },
 {
   name: 'Triban RC 500',
@@ -184,7 +203,7 @@ const bikes = [
    divId: 'bike_triban_500',
    parentDivId: 'divbike_triban500_series',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1619170/k$2470d4d473fbec18fcf697f154d42654/triban-rc-500-disc-brake-9sp-sora-road-bike-turqoise-blue.jpg?f=800x800',
 },
 {
   name: 'Triban RC 520',
@@ -192,7 +211,7 @@ const bikes = [
    divId: 'bike_triban_520',
    parentDivId: 'divbike_triban500_series',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p2036064/k$00222f9c57905421ca32e380a2fcb759/triban-rc-520-disc-road-bike-105-11sp-dark-blue.jpg?f=800x800',
 },
 {
   name: 'Van Rysel RCR 900 AF',
@@ -200,7 +219,7 @@ const bikes = [
    divId: 'bike_rcr_900_af',
    parentDivId: 'divbike_rcr900af',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p2036062/k$9555780250d36370b24a9ed8ceecc5ae/van-rysel-rcr-900-af-road-bike-105-11sp-black-grey.jpg?f=800x800',
 },
 {
   name: 'Van Rysel RCR 900 CF',
@@ -208,7 +227,7 @@ const bikes = [
    divId: 'bike_rcr_900_cf',
    parentDivId: 'divbike_rcr900cf',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1662021/k$8c8cbb656765f8eb1cb8fac0125a526c/van-rysel-rcr-900-cf-carbon-road-bike-105-11sp-blue.jpg?f=800x800',
 },
 {
   name: 'Rockrider ST 520 Grey',
@@ -216,7 +235,7 @@ const bikes = [
    divId: 'bike_mtb_st_500grey',
    parentDivId: 'divbike_st500_series',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1906441/k$21822f6ee5ec481fb33f7f976c0e6128/rockrider-st-520-275-8sp-mountain-bike-grey.jpg?f=800x800',
 },
 {
   name: 'Rockrider ST 520 Orange',
@@ -224,7 +243,7 @@ const bikes = [
    divId: 'bike_mtb_st_520orange',
    parentDivId: 'divbike_st500_series',
    xmlUrl:'',
-   imageUrl: '',
+   imageUrl: 'https://contents.mediadecathlon.com/p1576543/k$1efd0ea7775faf3c1894536f7017c95c/sq/V+LO+VTT+ST+100+U+FIT+ROUGE+27+5.jpg',
 },
 {
   name: 'Rockrider ST 530',
@@ -232,6 +251,7 @@ const bikes = [
    divId: 'bike_mtb_st_530',
    parentDivId: 'divbike_st500_series',
    xmlUrl:'',
+   imageUrl:'https://contents.mediadecathlon.com/p2036065/k$f5dc08fd5dee8b2e8d16fd5fc6efcce7/rockrider-sport-trail-st-530-chrome.jpg?f=800x800',
 },
 {
   name: 'Rockrider ST 900',
