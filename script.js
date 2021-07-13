@@ -27,6 +27,7 @@ const bikes = [
    divId: 'bike_folding_tilt500xs',
    parentDivId: 'divbike_tilt500xs',
    xmlUrl:'',
+   imageUrl: 'https://contents.mediadecathlon.com/p1232143/k$9e6288127e3c1949f25e0ddbee0a95a9/tilt-500-xs-14in-folding-bike-silver.jpg?f=800x800',
    
 },
 {
@@ -35,6 +36,7 @@ const bikes = [
   divId: 'bike_folding_tilt100',
   parentDivId: 'divbike_tilt100',
   xmlUrl:'',
+  imageUrl: 'https://contents.mediadecathlon.com/p1413339/k$e6cbad948907e2d80eefe51a62e7ba49/tilt-100-20in-folding-bike-black.jpg?f=800x800',
 },
 {
   name: 'Tilt 120',
@@ -42,13 +44,14 @@ const bikes = [
    divId: 'bike_folding_tilt120',
    parentDivId: 'divbike_tilt120',
    xmlUrl:'',
+   imageUrl: 'https://contents.mediadecathlon.com/p1249805/k$472b58b9db34e7ef6da64b754333801f/tilt-120-20in-6sp-folding-bike-red.jpg?f=800x800',
 },
 {
   name: 'Tilt 500 Blue',
    objectId:'',
    divId: 'bike_folding_tilt500blue',
    parentDivId: 'divbike_tilt500',
-   xmlUrl:'',
+   xmlUrl:'https://contents.mediadecathlon.com/p1325497/k$ab1e4b9e3e35d34dceb2a94fd5aa0186/tilt-500-20in-7sp-folding-bike-dark-blue.jpg?f=800x800',
 },
 {
   name: 'Tilt 500 Yellow',
@@ -56,6 +59,7 @@ const bikes = [
    divId: 'bike_folding_tilt500yellow',
    parentDivId: 'divbike_tilt500',
    xmlUrl:'',
+   imageUrl: 'https://contents.mediadecathlon.com/p1413336/k$ea4c6020e99e349b7f034a53b8eebb00/tilt-500-20in-7sp-folding-bike-yellow.jpg?f=800x800',
 },
 {
   name: 'Urban Speed',
@@ -63,6 +67,7 @@ const bikes = [
    divId: 'bike_urbanspeed',
    parentDivId: 'divbike_urbanspeed',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Elops 100',
@@ -91,6 +96,7 @@ const bikes = [
    divId: 'bike_elops120eu',
    parentDivId: 'divbike_elops120_120eu',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Riverside 100',
@@ -98,13 +104,7 @@ const bikes = [
    divId: 'bike_riverside_100',
    parentDivId: 'divbike_riverside100_120',
    xmlUrl:'',
-},
-{
-  name: 'Riverside 120',
-   objectId:'',
-   divId: 'bike_riverside_120',
-   parentDivId: 'divbike_riverside100_120',
-   xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'ST 100',
@@ -112,6 +112,7 @@ const bikes = [
    divId: 'bike_st_100',
    parentDivId: 'divbike_st100',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Riverside 500 Grey',
@@ -119,6 +120,7 @@ const bikes = [
    divId: 'bike_riverside_500grey',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Riverside 500 Blue',
@@ -126,6 +128,7 @@ const bikes = [
    divId: 'bike_riverside_500blue',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Riverside 500 Cloud Grey',
@@ -133,6 +136,7 @@ const bikes = [
    divId: 'bike_riverside_500cloudgrey',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Riverside 900',
@@ -140,6 +144,7 @@ const bikes = [
    divId: 'bike_riverside_900',
    parentDivId: 'divbike_riverside500_900',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Triban 100',
@@ -147,6 +152,7 @@ const bikes = [
    divId: 'bike_triban_100',
    parentDivId: 'divbike_triban100_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Triban 120',
@@ -154,6 +160,7 @@ const bikes = [
    divId: 'bike_triban_120',
    parentDivId: 'divbike_triban100_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Triban Easy',
@@ -161,6 +168,7 @@ const bikes = [
    divId: 'bike_triban_easy',
    parentDivId: 'divbike_triban100_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Triban Regular',
@@ -168,6 +176,7 @@ const bikes = [
    divId: 'bike_triban_regular',
    parentDivId: 'divbike_triban100_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Triban RC 500',
@@ -175,6 +184,7 @@ const bikes = [
    divId: 'bike_triban_500',
    parentDivId: 'divbike_triban500_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Triban RC 520',
@@ -182,6 +192,7 @@ const bikes = [
    divId: 'bike_triban_520',
    parentDivId: 'divbike_triban500_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Van Rysel RCR 900 AF',
@@ -189,6 +200,7 @@ const bikes = [
    divId: 'bike_rcr_900_af',
    parentDivId: 'divbike_rcr900af',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Van Rysel RCR 900 CF',
@@ -196,6 +208,7 @@ const bikes = [
    divId: 'bike_rcr_900_cf',
    parentDivId: 'divbike_rcr900cf',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Rockrider ST 520 Grey',
@@ -203,6 +216,7 @@ const bikes = [
    divId: 'bike_mtb_st_500grey',
    parentDivId: 'divbike_st500_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Rockrider ST 520 Orange',
@@ -210,6 +224,7 @@ const bikes = [
    divId: 'bike_mtb_st_520orange',
    parentDivId: 'divbike_st500_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Rockrider ST 530',
@@ -219,18 +234,12 @@ const bikes = [
    xmlUrl:'',
 },
 {
-  name: 'Rockrider ST 540',
-   objectId:'',
-   divId: 'bike_mtb_st_540',
-   parentDivId: 'divbike_st500_series',
-   xmlUrl:'',
-},
-{
   name: 'Rockrider ST 900',
    objectId:'',
    divId: 'bike_mtb_st_900',
    parentDivId: 'divbike_st500_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Rockrider XC 100',
@@ -238,6 +247,7 @@ const bikes = [
    divId: 'bike_mtb_xc_100',
    parentDivId: 'divbike_xc100_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Rockrider XC 500',
@@ -245,6 +255,7 @@ const bikes = [
    divId: 'bike_mtb_xc_500',
    parentDivId: 'divbike_xc100_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Rockrider XC 900',
@@ -252,6 +263,7 @@ const bikes = [
    divId: 'bike_mtb_xc_900',
    parentDivId: 'divbike_xc100_series',
    xmlUrl:'',
+   imageUrl: '',
 },
 {
   name: 'Rockrider AM 100',
@@ -259,6 +271,7 @@ const bikes = [
    divId: 'bike_mtb_am_100',
    parentDivId: 'divbike_am100',
    xmlUrl:'',
+   imageUrl: '',
 },
 ]
 
@@ -271,5 +284,11 @@ for(let i=0;i<bikes.length;i++){
   bikeDiv.className='bike_div'
   bikeDiv.id=bikes[i].divId
   document.querySelector('#'+bikes[i].parentDivId).append(bikeDiv)
+  const bikeImg=document.createElement('img')
+  bikeImg.src=bikes[i].imageUrl
+  bikeImg.width=300
+  bikeDiv.appendChild(bikeImg)
+
+ 
 }
 
