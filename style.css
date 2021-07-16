@@ -77,6 +77,13 @@ h1{
     height: 1000px;
 }
 
+.layer_container{
+    display:inline-block;
+    background-color:purple;
+    width: 10000px;
+    height: 1000px;
+}
+
 #urban_hybrid{
     display:inline-block;
     background-color:greenyellow;
@@ -127,28 +134,19 @@ h1{
     height: auto;
 }
 
-
-
-.layer_div{
+.bike_stripe_single{
     display: inline-block;
     background-color: lime;
-    width: 840px;
-    height: 850px;
-    margin:400px;
+    width: 420px;
 }
 
-.layer_div_bike{
+.bike_stripe_multiple{
     display: inline-block;
     background-color: lime;
-    width: 840px;
-    height: 850px;
-    margin:400px; 
-    overflow-x:auto;
-    overflow-y: hidden;
-    white-space: nowrap;
+    width: 10000px;
 }
 
-.bike_div{
+.bike_single,.bike_multiple{
     position:relative;
     left:0px;
     right: 0px;
@@ -157,10 +155,25 @@ h1{
     height: 800px;
     background-color: lightyellow;
     margin: 10px;
+    
 }
 
 .bike_div_content{
     display: block;
+}
+
+.bike_shortDesc{
+    white-space: normal;
+}
+
+.bike_div_img{
+margin-left: 50px;
+margin-right: 20px;
+
+}
+
+li{
+    list-style: none ;
 }
 
 
