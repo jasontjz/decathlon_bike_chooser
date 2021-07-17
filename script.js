@@ -140,33 +140,34 @@ for(let j=0;j<carousel_inner.length;j++){
       carousel_layer_0.setAttribute('data-bs-slide', 'carousel')
       document.querySelector('#layer7_container').appendChild(carousel_layer_0)
       
-      //create slide indicator Div
-      const carouselIndicators = document.createElement('div')
-      carouselIndicators.className='carousel-indicators'
-      carousel_layer_0.appendChild(carouselIndicators)
-      //create slide indicator 1
-      const indicatorSlide1 = document.createElement('button')
-      indicatorSlide1.type='button'
-      indicatorSlide1.setAttribute('data-bs-target','#carouselExampleIndicators')
-      indicatorSlide1.setAttribute('data-bs-slide-to','0')
-      indicatorSlide1.className='active'
-      indicatorSlide1.setAttribute('aria-current','true')
-      indicatorSlide1.setAttribute('aria-label','Slide 1')
-      carouselIndicators.appendChild(indicatorSlide1)
-      //create slide indicator 2
-      const indicatorSlide2 = document.createElement('button')
-      indicatorSlide2.type='button'
-      indicatorSlide2.setAttribute('data-bs-target','#carouselExampleIndicators')
-      indicatorSlide2.setAttribute('data-bs-slide-to','1')
-      indicatorSlide2.setAttribute('aria-label','Slide 2')
-      carouselIndicators.appendChild(indicatorSlide2)
-      //create slide indicator 2
-      const indicatorSlide3 = document.createElement('button')
-      indicatorSlide3.type='button'
-      indicatorSlide3.setAttribute('data-bs-target','#carouselExampleIndicators')
-      indicatorSlide3.setAttribute('data-bs-slide-to','2')
-      indicatorSlide3.setAttribute('aria-label','Slide 3')
-      carouselIndicators.appendChild(indicatorSlide3)
+      // //create slide indicator Div
+      // const carouselIndicators = document.createElement('div')
+      // carouselIndicators.className='carousel-indicators'
+      // carousel_layer_0.appendChild(carouselIndicators)
+      // //create slide indicator 1
+      // const indicatorSlide1 = document.createElement('button')
+      // indicatorSlide1.type='button'
+      // indicatorSlide1.setAttribute('data-bs-target','#carouselExampleIndicators')
+      // indicatorSlide1.setAttribute('data-bs-slide-to','0')
+      // indicatorSlide1.className='active'
+      // indicatorSlide1.setAttribute('aria-current','true')
+      // indicatorSlide1.setAttribute('aria-label','Slide 1')
+      // carouselIndicators.appendChild(indicatorSlide1)
+      // //create slide indicator 2
+      // const indicatorSlide2 = document.createElement('button')
+      // indicatorSlide2.type='button'
+      // indicatorSlide2.setAttribute('data-bs-target','#carouselExampleIndicators')
+      // indicatorSlide2.setAttribute('data-bs-slide-to','1')
+      // indicatorSlide2.setAttribute('aria-label','Slide 2')
+      // carouselIndicators.appendChild(indicatorSlide2)
+      // //create slide indicator 2
+      // const indicatorSlide3 = document.createElement('button')
+      // indicatorSlide3.type='button'
+      // indicatorSlide3.setAttribute('data-bs-target','#carouselExampleIndicators')
+      // indicatorSlide3.setAttribute('data-bs-slide-to','2')
+      // indicatorSlide3.setAttribute('aria-label','Slide 3')
+      // carouselIndicators.appendChild(indicatorSlide3)
+
       //create button prev
       const buttonPrev=document.createElement('button')
       buttonPrev.className='carousel-control-prev'
@@ -204,6 +205,7 @@ for(let j=0;j<carousel_inner.length;j++){
       carousel_layer_1.className='carousel-inner'
       carousel_layer_1.id=carousel_inner[j]
       carousel_layer_0.appendChild(carousel_layer_1)
+     
 
       } else {
 
@@ -219,9 +221,9 @@ for(let j=0;j<carousel_inner.length;j++){
          carousel_layer_1.className='carousel-inner'
          carousel_layer_1.id=carousel_inner[j]
          carousel_layer_0.appendChild(carousel_layer_1)
-
+         
       }
-
+      
 
    }
 
@@ -291,5 +293,56 @@ for(let i=0;i<bikes.length;i++){
 
 }
 
+
+//create as manyslide indicators as there are child elements within each multiple-bike layer_1
+
+const multipleLayer0Array = ['divbike_tilt500_layer_0','divbike_elops120_120eu_layer_0','divbike_st100_layer_0','divbike_riverside500_900_layer_0','divbike_triban100_series_layer_0','divbike_triban500_series_layer_0','divbike_st500_series_layer_0','divbike_xc100_series_layer_0']
+
+for(let k=0;k<multipleImageArray.length;k++){
+   //create slide indicator Div
+   const carouselIndicators = document.createElement('div')
+   carouselIndicators.className='carousel-indicators'
+   document.querySelector('#'+multipleLayer0Array[k]).appendChild(carouselIndicators)
+   //create slide indicator 1
+   const indicatorSlide1 = document.createElement('button')
+   indicatorSlide1.type='button'
+   indicatorSlide1.setAttribute('data-bs-target','#carouselExampleIndicators')
+   indicatorSlide1.setAttribute('data-bs-slide-to','0')
+   indicatorSlide1.className='active'
+   indicatorSlide1.setAttribute('aria-current','true')
+   indicatorSlide1.setAttribute('aria-label','Slide 1')
+   carouselIndicators.appendChild(indicatorSlide1)
+   //loop to find how many child elements within each layer_1 (class = 'carousel-inner, id same as multipleImageArray)
+   const layer1 = document.querySelector('#'+multipleImageArray[k])
+   const layer1BikeCount = layer1.childElementCount
+   console.log(layer1)
+   console.log(layer1BikeCount)
+   //create a loop to create subsequent slide indicators
+   for(let l=0;l<layer1BikeCount-1;l++){
+      const indicatorSlides = document.createElement('button')
+      indicatorSlides.type='button'
+      indicatorSlides.setAttribute('data-bs-target','#carouselExampleIndicators')
+      indicatorSlides.setAttribute('data-bs-slide-to',(l+1))
+      indicatorSlides.setAttribute('aria-label','Slide '+(l+2))
+      carouselIndicators.appendChild(indicatorSlides)
+
+   }
+   
+   // //create slide indicator 2
+   // const indicatorSlide2 = document.createElement('button')
+   // indicatorSlide2.type='button'
+   // indicatorSlide2.setAttribute('data-bs-target','#carouselExampleIndicators')
+   // indicatorSlide2.setAttribute('data-bs-slide-to','1')
+   // indicatorSlide2.setAttribute('aria-label','Slide 2')
+   // carouselIndicators.appendChild(indicatorSlide2)
+   // //create slide indicator 2
+   // const indicatorSlide3 = document.createElement('button')
+   // indicatorSlide3.type='button'
+   // indicatorSlide3.setAttribute('data-bs-target','#carouselExampleIndicators')
+   // indicatorSlide3.setAttribute('data-bs-slide-to','2')
+   // indicatorSlide3.setAttribute('aria-label','Slide 3')
+   // carouselIndicators.appendChild(indicatorSlide3)
+
+}
 
 
