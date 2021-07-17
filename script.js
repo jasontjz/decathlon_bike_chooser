@@ -54,7 +54,7 @@ const bikes = [
   {
      bike:"Riverside 500 Cloud Grey",name:"Riverside 500 Cloud Grey",modelID:"8656221",divClass:"carousel-item",productUrl:"https://www.decathlon.sg/p/8656221-197082-riverside-500-disc-brake-9sp-hybrid-bike-cloud-grey.html?c=11465#/4923-size-s_155_164cm",divID:"bike_riverside_500cloudgrey",parentDivId:"divbike_riverside500_900",imageUrl:"https://contents.mediadecathlon.com/p1813733/k$7b5eb039c6a39dab85fffc83ff693d6c/riverside-500-disc-brake-9sp-hybrid-bike-cloud-grey.jpg?f=800x800",shortDesc:"Hybrid bike for cycling on road & gravel paths.\nEquipped with an alloy frame, 63mm travel suspension fork, 9-speed drivetrain, disc brakes. Weight: 13.9kg Sizing: Small (1.50-1.64m), Medium (1.65-1.77m), Large (1.78-1.94m) Kickstand not included",bikeType:"Hybrid Bike",wheelSize:"28in",material:"Aluminum",speeds:"1x9",brakeType:"Disc Brake (Mechanical)",weight:"13.9kg",USP:"Aluminum frame, suspension and disc brakes for unbeatable value"  },
   {
-     bike:"Riverside 900",name:"Riverside 900",modelID:"8480246",divClass:"carousel-item active",productUrl:"https://www.decathlon.sg/p/8480246-112682-riverside-900-disc-brake-10sp-hybrid-bike-light-grey.html?c=11465#/26-size-s",divID:"bike_riverside_900",parentDivId:"divbike_riverside500_900",imageUrl:"https://contents.mediadecathlon.com/p2036063/k$588b0700228c70f61c9744109c58dd64/riverside-900-disc-brake-10sp-hybrid-bike-light-grey.jpg?f=800x800",shortDesc:"Hybrid Bike for cycling on road & gravel paths\nAlloy frame, 63mm travel fork with lockout, 10-speed drivetrain, hydraulic disc brakes. Weight: 13.6kg Sizing: Small (1.50-1.65m), Medium (1.66-1.82m), Large (1.83-2m) Kickstand not included",bikeType:"Hybrid Bike",wheelSize:"28in",material:"Aluminum",speeds:"1x10",brakeType:"Disc Brake (Hydraulic)",weight:"13.6kg",USP:"Upgraded with hydraulic disc brakes and 10 speeds"  },
+     bike:"Riverside 900",name:"Riverside 900",modelID:"8480246",divClass:"carousel-item",productUrl:"https://www.decathlon.sg/p/8480246-112682-riverside-900-disc-brake-10sp-hybrid-bike-light-grey.html?c=11465#/26-size-s",divID:"bike_riverside_900",parentDivId:"divbike_riverside500_900",imageUrl:"https://contents.mediadecathlon.com/p2036063/k$588b0700228c70f61c9744109c58dd64/riverside-900-disc-brake-10sp-hybrid-bike-light-grey.jpg?f=800x800",shortDesc:"Hybrid Bike for cycling on road & gravel paths\nAlloy frame, 63mm travel fork with lockout, 10-speed drivetrain, hydraulic disc brakes. Weight: 13.6kg Sizing: Small (1.50-1.65m), Medium (1.66-1.82m), Large (1.83-2m) Kickstand not included",bikeType:"Hybrid Bike",wheelSize:"28in",material:"Aluminum",speeds:"1x10",brakeType:"Disc Brake (Hydraulic)",weight:"13.6kg",USP:"Upgraded with hydraulic disc brakes and 10 speeds"  },
   {
      bike:"Triban 100",name:"Triban 100",modelID:"8544956",divClass:"carousel-item active",productUrl:"https://www.decathlon.sg/p/8544956-138541-triban-rc-100-7sp-road-bike-silver.html?c=11465#/23-size-l",divID:"bike_triban_100",parentDivId:"divbike_triban100_series",imageUrl:"https://contents.mediadecathlon.com/p1662199/k$4d461294413f611f2b18751bd05f0fed/triban-rc-100-7sp-road-bike-silver.jpg?f=800x800",shortDesc:"Road cycling at moderate speeds on most terrain except mountain biking trails\nAlloy frame, comfortable steel fork, reliable 7-speed drivetrain. Weight: 11.3kg Sizing: XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included",bikeType:"Road Bike",wheelSize:"700C",material:"Aluminum/Steel Fork",speeds:"1x7",brakeType:"Caliper Brake",weight:"11.3kg",USP:"Our starter road bike, offering an aluminum frame and drop bars at an unbeatable price"  },
   {
@@ -122,147 +122,172 @@ const carousel_inner = ['divbike_tilt500xs','divbike_tilt100','divbike_tilt120',
 //             </div>
 //           </div> 
 
+
+const multipleImageArray = ['divbike_tilt500','divbike_elops120_120eu','divbike_st100','divbike_riverside500_900','divbike_triban100_series','divbike_triban500_series','divbike_st500_series','divbike_xc100_series']
+
+//divbike_tilt500xs divbike_tilt100 divbike_tilt120 divbike_urbanspeed divbike_elops100 divbike_riverside100_120 divbike_rcr900af divbike_rcr900cf divbike_am100
+ 
 for(let j=0;j<carousel_inner.length;j++){
-   //create highest layer carousel
-   const carousel_layer_0 = document.createElement('div')
-   carousel_layer_0.id=carousel_inner[j]+'_layer_0'
-   carousel_layer_0.className='carousel slide'
-   carousel_layer_0.setAttribute('data-bs-slide', 'carousel')
-   document.querySelector('#layer7_container').appendChild(carousel_layer_0)
-   //create slide indicator Div
-   const carouselIndicators = document.createElement('div')
-   carouselIndicators.className='carousel-indicators'
-   carousel_layer_0.appendChild(carouselIndicators)
-   //create slide indicator 1
-   const indicatorSlide1 = document.createElement('button')
-   indicatorSlide1.type='button'
-   indicatorSlide1.setAttribute('data-bs-target','#carouselExampleIndicators')
-   indicatorSlide1.setAttribute('data-bs-slide-to','0')
-   indicatorSlide1.className='active'
-   indicatorSlide1.setAttribute('aria-current','true')
-   indicatorSlide1.setAttribute('aria-label','Slide 1')
-   carouselIndicators.appendChild(indicatorSlide1)
-   //create slide indicator 2
-   const indicatorSlide2 = document.createElement('button')
-   indicatorSlide2.type='button'
-   indicatorSlide2.setAttribute('data-bs-target','#carouselExampleIndicators')
-   indicatorSlide2.setAttribute('data-bs-slide-to','1')
-   indicatorSlide2.setAttribute('aria-label','Slide 2')
-   carouselIndicators.appendChild(indicatorSlide2)
-   //create slide indicator 2
-   const indicatorSlide3 = document.createElement('button')
-   indicatorSlide3.type='button'
-   indicatorSlide3.setAttribute('data-bs-target','#carouselExampleIndicators')
-   indicatorSlide3.setAttribute('data-bs-slide-to','2')
-   indicatorSlide3.setAttribute('aria-label','Slide 3')
-   carouselIndicators.appendChild(indicatorSlide3)
-   //create button prev
-   const buttonPrev=document.createElement('button')
-   buttonPrev.className='carousel-control-prev'
-   buttonPrev.type='button'
-   buttonPrev.setAttribute('data-bs-target','#'+carousel_inner[j]+'_layer_0')
-   buttonPrev.setAttribute('data-bs-slide','prev')
-   carousel_layer_0.appendChild(buttonPrev)
-   const buttonPrevSpanIcon = document.createElement('span')
-   buttonPrevSpanIcon.className='carousel-control-prev-icon'
-   buttonPrevSpanIcon.setAttribute('aria-hidden','true')
-   buttonPrev.appendChild(buttonPrevSpanIcon)
-   const buttonPrevSpanText=document.createElement('span')
-   buttonPrevSpanText.className='visually-hidden'
-   buttonPrevSpanText.innerHTML='Previous'
-   buttonPrev.appendChild(buttonPrevSpanText)
-//create button Next
-const buttonNext=document.createElement('button')
-buttonNext.className='carousel-control-next'
-buttonNext.type='button'
-buttonNext.setAttribute('data-bs-target','#'+carousel_inner[j]+'_layer_0')
-buttonNext.setAttribute('data-bs-slide','next')
-carousel_layer_0.appendChild(buttonNext)
-const buttonNextSpanIcon = document.createElement('span')
-buttonNextSpanIcon.className='carousel-control-next-icon'
-buttonNextSpanIcon.setAttribute('aria-hidden','true')
-buttonNext.appendChild(buttonNextSpanIcon)
-const buttonNextSpanText=document.createElement('span')
-buttonNextSpanText.className='visually-hidden'
-buttonNextSpanText.innerHTML='Next'
-buttonNext.appendChild(buttonNextSpanText)
-   //create second layer carousel
-   const carousel_layer_1=document.createElement('div')
-   carousel_layer_1.className='carousel-inner'
-   carousel_layer_1.id=carousel_inner[j]
-   carousel_layer_0.appendChild(carousel_layer_1)
+   // console.log(carousel_inner[j])
+   const currentCarouselId=carousel_inner[j]
 
-}
+   if(multipleImageArray.includes(currentCarouselId)){
+   
+      //create highest layer carousel
+      const carousel_layer_0 = document.createElement('div')
+      carousel_layer_0.id=carousel_inner[j]+'_layer_0'
+      carousel_layer_0.className='carousel slide'
+      carousel_layer_0.setAttribute('data-bs-slide', 'carousel')
+      document.querySelector('#layer7_container').appendChild(carousel_layer_0)
+      
+      //create slide indicator Div
+      const carouselIndicators = document.createElement('div')
+      carouselIndicators.className='carousel-indicators'
+      carousel_layer_0.appendChild(carouselIndicators)
+      //create slide indicator 1
+      const indicatorSlide1 = document.createElement('button')
+      indicatorSlide1.type='button'
+      indicatorSlide1.setAttribute('data-bs-target','#carouselExampleIndicators')
+      indicatorSlide1.setAttribute('data-bs-slide-to','0')
+      indicatorSlide1.className='active'
+      indicatorSlide1.setAttribute('aria-current','true')
+      indicatorSlide1.setAttribute('aria-label','Slide 1')
+      carouselIndicators.appendChild(indicatorSlide1)
+      //create slide indicator 2
+      const indicatorSlide2 = document.createElement('button')
+      indicatorSlide2.type='button'
+      indicatorSlide2.setAttribute('data-bs-target','#carouselExampleIndicators')
+      indicatorSlide2.setAttribute('data-bs-slide-to','1')
+      indicatorSlide2.setAttribute('aria-label','Slide 2')
+      carouselIndicators.appendChild(indicatorSlide2)
+      //create slide indicator 2
+      const indicatorSlide3 = document.createElement('button')
+      indicatorSlide3.type='button'
+      indicatorSlide3.setAttribute('data-bs-target','#carouselExampleIndicators')
+      indicatorSlide3.setAttribute('data-bs-slide-to','2')
+      indicatorSlide3.setAttribute('aria-label','Slide 3')
+      carouselIndicators.appendChild(indicatorSlide3)
+      //create button prev
+      const buttonPrev=document.createElement('button')
+      buttonPrev.className='carousel-control-prev'
+      buttonPrev.type='button'
+      buttonPrev.setAttribute('data-bs-target','#'+carousel_inner[j]+'_layer_0')
+      buttonPrev.setAttribute('data-bs-slide','prev')
+      carousel_layer_0.appendChild(buttonPrev)
+      const buttonPrevSpanIcon = document.createElement('span')
+      buttonPrevSpanIcon.className='carousel-control-prev-icon'
+      buttonPrevSpanIcon.setAttribute('aria-hidden','true')
+      buttonPrev.appendChild(buttonPrevSpanIcon)
+      const buttonPrevSpanText=document.createElement('span')
+      buttonPrevSpanText.className='visually-hidden'
+      buttonPrevSpanText.innerHTML='Previous'
+      buttonPrev.appendChild(buttonPrevSpanText)
+      //create button Next
+      const buttonNext=document.createElement('button')
+      buttonNext.className='carousel-control-next'
+      buttonNext.type='button'
+      buttonNext.setAttribute('data-bs-target','#'+carousel_inner[j]+'_layer_0')
+      buttonNext.setAttribute('data-bs-slide','next')
+      carousel_layer_0.appendChild(buttonNext)
+      const buttonNextSpanIcon = document.createElement('span')
+      buttonNextSpanIcon.className='carousel-control-next-icon'
+      buttonNextSpanIcon.setAttribute('aria-hidden','true')
+      buttonNext.appendChild(buttonNextSpanIcon)
+      const buttonNextSpanText=document.createElement('span')
+      buttonNextSpanText.className='visually-hidden'
+      buttonNextSpanText.innerHTML='Next'
+      buttonNext.appendChild(buttonNextSpanText)
+      
+
+      //create second layer carousel
+      const carousel_layer_1=document.createElement('div')
+      carousel_layer_1.className='carousel-inner'
+      carousel_layer_1.id=carousel_inner[j]
+      carousel_layer_0.appendChild(carousel_layer_1)
+
+      } else {
+
+         //create highest layer carousel
+         const carousel_layer_0 = document.createElement('div')
+         carousel_layer_0.id=carousel_inner[j]+'_layer_0'
+         carousel_layer_0.className='carousel slide'
+         carousel_layer_0.setAttribute('data-bs-slide', 'carousel')
+         document.querySelector('#layer7_container').appendChild(carousel_layer_0)
+
+         //create second layer carousel
+         const carousel_layer_1=document.createElement('div')
+         carousel_layer_1.className='carousel-inner'
+         carousel_layer_1.id=carousel_inner[j]
+         carousel_layer_0.appendChild(carousel_layer_1)
+
+      }
 
 
-
-
-
+   }
 
 
  
 for(let i=0;i<bikes.length;i++){
-  //create div for each bike
-  const bikeDiv = document.createElement('div')
-  bikeDiv.className=bikes[i].divClass
-  bikeDiv.id=bikes[i].divID
-  document.querySelector('#'+bikes[i].parentDivId).append(bikeDiv)
-  //create image & append
-  const bikeImg=document.createElement('img')
-  bikeImg.src=bikes[i].imageUrl
-  bikeImg.width=300
-  bikeImg.className='bike_div_img'
-  bikeDiv.appendChild(bikeImg)
-  //create bike name & append
-  const bikeH2 = document.createElement('h2')
-  bikeH2.innerText =bikes[i].name
-  bikeH2.className='bike_div_content'
-  bikeDiv.appendChild(bikeH2)
-  //create bike short desc & append
-  const bikePara = document.createElement('p')
-  bikePara.innerText=bikes[i].shortDesc
-  bikePara.className='bike_shortDesc'
-  bikeDiv.appendChild(bikePara)
-  //create bike USP & append
-  const bikeUSP = document.createElement('p')
-  bikeUSP.innerText=bikes[i].USP
-  bikeUSP.className='bike_shortDesc'
-  bikeDiv.appendChild(bikeUSP)
-  //create UL for specs
-  const bikeSpecs = document.createElement('ul')
-  bikeSpecs.innerText="Specifications:"
-  bikeDiv.appendChild(bikeSpecs)
-    //create li1 bikeType
-    const bikeType = document.createElement('li')
-    bikeType.innerText='Bike Type: '+bikes[i].bikeType
-    bikeType.className='bike_specs'
-    bikeSpecs.appendChild(bikeType)
-    //create li2 wheelSize
-    const wheelSize = document.createElement('li')
-    wheelSize.innerText='Wheel Size: '+bikes[i].wheelSize
-    wheelSize.className='bike_specs'
-    bikeSpecs.appendChild(wheelSize)
-    //create li3 material
-    const material = document.createElement('li')
-    material.innerText='Material: '+bikes[i].material
-    material.className='bike_specs'
-    bikeSpecs.appendChild(material)
-    //create li4 speeds
-    const speeds = document.createElement('li')
-    speeds.innerText='Speeds: '+bikes[i].speeds
-    speeds.className='bike_specs'
-    bikeSpecs.appendChild(speeds)
-    //create li5 brakeType
-    const brakeType = document.createElement('li')
-    brakeType.innerText='Brake Type: '+bikes[i].brakeType
-    brakeType.className='bike_specs'
-    bikeSpecs.appendChild(brakeType)
-    //create li6 weight
-    const weight = document.createElement('li')
-    weight.innerText='Weight: '+bikes[i].weight
-    weight.className='bike_specs'
-    bikeSpecs.appendChild(weight)
-
+   //create div for each bike
+   const bikeDiv = document.createElement('div')
+   bikeDiv.className=bikes[i].divClass
+   bikeDiv.id=bikes[i].divID
+   document.querySelector('#'+bikes[i].parentDivId).append(bikeDiv)
+   //create image & append
+   const bikeImg=document.createElement('img')
+   bikeImg.src=bikes[i].imageUrl
+   bikeImg.width=300
+   bikeImg.className='bike_div_img'
+   bikeDiv.appendChild(bikeImg)
+   //create bike name & append
+   const bikeH2 = document.createElement('h2')
+   bikeH2.innerText =bikes[i].name
+   bikeH2.className='bike_div_content'
+   bikeDiv.appendChild(bikeH2)
+   //create bike short desc & append
+   const bikePara = document.createElement('p')
+   bikePara.innerText=bikes[i].shortDesc
+   bikePara.className='bike_shortDesc'
+   bikeDiv.appendChild(bikePara)
+   //create bike USP & append
+   const bikeUSP = document.createElement('p')
+   bikeUSP.innerText=bikes[i].USP
+   bikeUSP.className='bike_shortDesc'
+   bikeDiv.appendChild(bikeUSP)
+   //create UL for specs
+   const bikeSpecs = document.createElement('ul')
+   bikeSpecs.innerText="Specifications:"
+   bikeDiv.appendChild(bikeSpecs)
+   //create li1 bikeType
+   const bikeType = document.createElement('li')
+   bikeType.innerText='Bike Type: '+bikes[i].bikeType
+   bikeType.className='bike_specs'
+   bikeSpecs.appendChild(bikeType)
+   //create li2 wheelSize
+   const wheelSize = document.createElement('li')
+   wheelSize.innerText='Wheel Size: '+bikes[i].wheelSize
+   wheelSize.className='bike_specs'
+   bikeSpecs.appendChild(wheelSize)
+   //create li3 material
+   const material = document.createElement('li')
+   material.innerText='Material: '+bikes[i].material
+   material.className='bike_specs'
+   bikeSpecs.appendChild(material)
+   //create li4 speeds
+   const speeds = document.createElement('li')
+   speeds.innerText='Speeds: '+bikes[i].speeds
+   speeds.className='bike_specs'
+   bikeSpecs.appendChild(speeds)
+   //create li5 brakeType
+   const brakeType = document.createElement('li')
+   brakeType.innerText='Brake Type: '+bikes[i].brakeType
+   brakeType.className='bike_specs'
+   bikeSpecs.appendChild(brakeType)
+   //create li6 weight
+   const weight = document.createElement('li')
+   weight.innerText='Weight: '+bikes[i].weight
+   weight.className='bike_specs'
+   bikeSpecs.appendChild(weight)
 
 }
 
