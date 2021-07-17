@@ -247,10 +247,10 @@ for(let i=0;i<bikes.length;i++){
    bikeH2.className='bike_div_content'
    bikeDiv.appendChild(bikeH2)
    //create bike short desc & append
-   const bikePara = document.createElement('p')
-   bikePara.innerText=bikes[i].shortDesc
-   bikePara.className='bike_shortDesc'
-   bikeDiv.appendChild(bikePara)
+   // const bikePara = document.createElement('p')
+   // bikePara.innerText=bikes[i].shortDesc
+   // bikePara.className='bike_shortDesc'
+   // bikeDiv.appendChild(bikePara)
    //create bike USP & append
    const bikeUSP = document.createElement('p')
    bikeUSP.innerText=bikes[i].USP
