@@ -241,25 +241,29 @@ for(let i=0;i<bikes.length;i++){
    bikeImg.width=300
    bikeImg.className='bike_div_img'
    bikeDiv.appendChild(bikeImg)
+   //create div for specs
+   const bikeSpecsDiv = document.createElement('div')
+   bikeSpecsDiv.className='bike_specs_div'
+   bikeDiv.appendChild(bikeSpecsDiv)
    //create bike name & append
    const bikeH2 = document.createElement('h2')
    bikeH2.innerText =bikes[i].name
-   bikeH2.className='bike_div_content'
-   bikeDiv.appendChild(bikeH2)
+   bikeH2.className='bike_div_title'
+   bikeSpecsDiv.appendChild(bikeH2)
    //create bike short desc & append
    // const bikePara = document.createElement('p')
    // bikePara.innerText=bikes[i].shortDesc
    // bikePara.className='bike_shortDesc'
-   // bikeDiv.appendChild(bikePara)
+   // bikeSpecsDiv.appendChild(bikePara)
    //create bike USP & append
    const bikeUSP = document.createElement('p')
    bikeUSP.innerText=bikes[i].USP
    bikeUSP.className='bike_shortDesc'
-   bikeDiv.appendChild(bikeUSP)
+   bikeSpecsDiv.appendChild(bikeUSP)
    //create UL for specs
    const bikeSpecs = document.createElement('ul')
    bikeSpecs.innerText="Specifications:"
-   bikeDiv.appendChild(bikeSpecs)
+   bikeSpecsDiv.appendChild(bikeSpecs)
    //create li1 bikeType
    const bikeType = document.createElement('li')
    bikeType.innerText='Bike Type: '+bikes[i].bikeType
@@ -290,7 +294,33 @@ for(let i=0;i<bikes.length;i++){
    weight.innerText='Weight: '+bikes[i].weight
    weight.className='bike_specs'
    bikeSpecs.appendChild(weight)
-
+   //create button Div
+   const buttonDiv = document.createElement('div')
+   buttonDiv.className='button_div'
+   bikeDiv.appendChild(buttonDiv)
+   //create CTA
+   const ctalink = document.createElement('a')
+   const cta = document.createElement('div')
+   ctalink.appendChild(cta)
+   ctalink.innerText='BUY ONLINE'
+   ctalink.href=bikes[i].productUrl
+   ctalink.target='_blank'
+   cta.className='cta'
+   ctalink.className='cta'
+   buttonDiv.appendChild(ctalink)
+   
+   //create back button
+   const buttonBack = document.createElement('button')
+   buttonBack.type='button'
+   buttonBack.className='cta'
+   buttonBack.innerText='GO BACK'
+   buttonDiv.appendChild(buttonBack)
+   //create home button
+   const buttonHome = document.createElement('button')
+   buttonHome.type='button'
+   buttonHome.className='cta'
+   buttonHome.innerText='START OVER'
+   buttonDiv.appendChild(buttonHome)
 }
 
 

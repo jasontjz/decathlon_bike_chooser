@@ -150,7 +150,17 @@ h1{
    
 }
 
-.bike_div_content{
+.bike_specs_div{
+    width:400px;
+    height:300px;
+    background-color:white;
+    text-align: left;
+    padding-left:50px;
+    padding-right:40px;
+
+}
+
+.bike_div_title{
     display: block;
 }
 
@@ -160,7 +170,6 @@ h1{
 
 .bike_div_img{
 margin:auto;
-
 }
 
 ul{
@@ -176,19 +185,16 @@ li{
     background-color: white;
     width: 400px;
     display:inline-block;
-    padding-left: 10px;
-    padding-right: 0;
     margin-left:500px;
     margin-right:500px;
+    text-align:center;
+    white-space: nowrap;
 }
 
 .active, .carousel-item{
     width: 400px;
     height:800px;
     white-space: nowrap;
-    padding-left: 50px;
-    padding-right: 30px;
-
 }
 
 .carousel-inner{
@@ -219,6 +225,31 @@ li{
         height:5px;
       }
 
+      .button_div{
+          text-align: center;
+          width:300px;
+          height:170px;
+          white-space: nowrap;
+             margin:auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+
+      .cta{
+        margin:auto;
+        display:block;
+        background-color: yellow;
+        min-width: 200px;
+        border-radius: 5px;
+        color:black;
+                       
+      }
+
+
+      a:link{
+          text-decoration: none;
+      }
 
 /* .zoomButton {
     background-color: red;
