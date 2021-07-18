@@ -1,205 +1,241 @@
-body{
-    font-family: 'Roboto', sans-serif;
-
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 #title {
-    background-color:#0082c3;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-align: center;
-    width: auto;
-  }
-
-#intro_main{
-    background-color: darkgray;
-    width: auto;
-    height: 100px;
-    text-align: center;
-    vertical-align:middle;
-    margin: 50px;
+  background-color: #0082c3;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  width: auto;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
-button{
-    background-color: #FCEB05;
-    border-radius: 10px;
-    padding: auto;
-    width: 200px;
-    height: auto;
-    border: 0;
-    font-family: 'roboto', sans-serif;
-    font-size:20px;
-    cursor:pointer;
+#image_carousel {
+  margin-top: 20px;
 }
 
-.user_intention_choose{
-display: inline-block;
-margin: 20px;
+#intro_main {
+  background-color: #0082c3;
+  width: auto;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  margin: 50px;
+  color: white;
+  padding: 30px;
 }
 
-h1{
-    text-align: center;
+#biodata-container {
+  margin: auto;
+  background-color: #0082c3;
+  color: white;
+  height: 100px;
 }
 
-#biodata_container{
-    margin: 20px
-
+button {
+  background-color: #fceb05;
+  border-radius: 10px;
+  padding: auto;
+  width: 200px;
+  height: auto;
+  border: 0;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.spacer{
-    background-color: lightsteelblue;
-    height: 800px;
+.user_intention_choose {
+  display: inline-block;
+  margin: 20px;
 }
 
-.user_intention{
-    cursor:pointer;
+h1 {
+  text-align: center;
 }
 
-
-.biodata_title{
-    margin:10px
+#biodata_container {
+  margin: 20px;
 }
 
-.bike{
-    height: 200px;
-
+.spacer {
+  background-color: white;
+  height: 1200px;
 }
 
-#user_intention_container{
-    display:inline-block;
-    background-color: salmon;
+.user_intention {
+  cursor: pointer;
 }
 
-#layer2_container, #layer3_container, #layer4_container, #layer5_container, #layer6_container{
-    display:inline-block;
-    background-color:purple;
-    width: 10000px;
-    height: 1000px;
+.biodata_title {
+  margin: 10px;
 }
 
-.layer_container{
-    display:inline-block;
-    background-color:purple;
-    width: 10000px;
-    height: 1000px;
+.bike {
+  height: 200px;
 }
 
-#urban_hybrid{
-    display:inline-block;
-    background-color:greenyellow;
-    width:1000px;
-    height:500px;
-    margin:100px;
-
+#user_intention_container {
+  display: inline-block;
+  background-color: white;
+  width: 1200px;
+  padding: 30px;
 }
 
-
-#urban_cycling, #city_folding, #folding_bikes, #trad_city_bikes, #city_folding, #folding_bikes_style1, #trad_city_bikes_style1, #folding_bikes_style2, #trad_city_bikes_style2{
-    display:inline-block;
-    background-color: seagreen;
-    width:1000px;
-    height:500px;
-    margin:100px;
-
+#layer2_container,
+#layer3_container,
+#layer4_container,
+#layer5_container,
+#layer6_container {
+  display: inline-block;
+  background-color: white;
+  width: 20000px;
+  height: 1000px;
 }
 
-#hybrid_cycling, #hybrid_gate2_features, #hybrid_gate3b_rugged_flexible{
-    display:inline-block;
-    width: 1000px;
-    height: 500px;
-    background-color: lightgreen;
-    margin:100px;
+.layer_container {
+  display: inline-block;
+  background-color: white;
+  width: 10000px;
+  height: 1000px;
 }
 
-#road_cycling, #road_endurance, #road_racing, #road_cycling_style1, #road_endurance_style1, #road_racing_style1{
-    display:inline-block;
-    width: 1000px;
-    height: 500px;
-    background-color:pink;
-    margin:100px;
+#urban_hybrid {
+  display: inline-block;
+  background-color: white;
+  width: 1000px;
+  height: 500px;
+  margin: 100px;
 }
 
-#mountain_biking, #mountain_biking_style1, #mtb_st, #mtb_xc, #mtb_am{
-    display:inline-block;
-    width: 1000px;
-    height: 500px;
-    background-color:orange;
-    margin:100px;
+#urban_cycling,
+#city_folding,
+#folding_bikes,
+#trad_city_bikes,
+#city_folding,
+#folding_bikes_style1,
+#trad_city_bikes_style1,
+#folding_bikes_style2,
+#trad_city_bikes_style2 {
+  display: inline-block;
+  background-color: white;
+  width: 1000px;
+  height: 500px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
-#layer7_container{
-    display:inline-block;
-    background-color:purple;
-    width: 29000px;
-    height: 1000px;
-    padding: 50px;
+#hybrid_cycling,
+#hybrid_gate2_features,
+#hybrid_gate3b_rugged_flexible {
+  display: inline-block;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
-
-
-.bike_single, .bike_multiple{
-    position:relative;
-    left:0px;
-    right: 0px;
-    display:inline-block;
-    width: 400px;
-    height: 800px;
-    background-color: lightyellow;
-    margin: 10px;
-    white-space: nowrap;
-   
+#road_cycling,
+#road_endurance,
+#road_racing,
+#road_cycling_style1,
+#road_endurance_style1,
+#road_racing_style1 {
+  display: inline-block;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
-.bike_specs_div{
-    width:400px;
-    height:300px;
-    background-color:white;
-    text-align: left;
-    padding-left:50px;
-    padding-right:40px;
-
+#mountain_biking,
+#mountain_biking_style1,
+#mtb_st,
+#mtb_xc,
+#mtb_am {
+  display: inline-block;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
-.bike_div_title{
-    display: block;
+#layer7_container {
+  display: inline-block;
+  background-color: white;
+  width: 29000px;
+  height: 1000px;
+  padding: 50px;
 }
 
-.bike_shortDesc{
-    white-space: normal;
+.bike_single,
+.bike_multiple {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  display: inline-block;
+  width: 400px;
+  height: 800px;
+  background-color: white;
+  margin: 10px;
+  white-space: nowrap;
 }
 
-.bike_div_img{
-margin:auto;
+.bike_specs_div {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 40px;
 }
 
-ul{
-    margin-left:-30px;
-    padding:0px;
+.bike_div_title {
+  display: block;
 }
 
-li{
-    list-style: none ;
-    }
-
-.slide{
-    background-color: white;
-    width: 400px;
-    display:inline-block;
-    margin-left:500px;
-    margin-right:500px;
-    text-align:center;
-    white-space: nowrap;
+.bike_shortDesc {
+  white-space: normal;
 }
 
-.active, .carousel-item{
-    width: 400px;
-    height:800px;
-    white-space: nowrap;
+.bike_div_img {
+  margin: auto;
 }
 
-.carousel-inner{
-    width:400px;
-    height:800px;
+ul {
+  margin-left: -30px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.slide {
+  background-color: white;
+  width: 400px;
+  display: inline-block;
+  margin-left: 500px;
+  margin-right: 500px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.active,
+.carousel-item {
+  width: 400px;
+  height: 800px;
+  white-space: nowrap;
+}
+
+.carousel-inner {
+  width: 400px;
+  height: 800px;
 }
 
 .carousel-control-prev-icon {
@@ -211,45 +247,43 @@ li{
 }
 
 .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-    }
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 
+.carousel .carousel-indicators .active {
+  background-color: black;
+  height: 5px;
+}
 
+.button_div {
+  text-align: center;
+  width: 300px;
+  height: 170px;
+  white-space: nowrap;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .carousel .carousel-indicators .active {
-        background-color:black;
-        height:5px;
-      }
+.cta,
+.back,
+.home {
+  margin: auto;
+  display: block;
+  background-color: yellow;
+  min-width: 200px;
+  border-radius: 5px;
+  color: black;
+}
 
-      .button_div{
-          text-align: center;
-          width:300px;
-          height:170px;
-          white-space: nowrap;
-             margin:auto;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-      }
-
-      .cta, .back, .home{
-        margin:auto;
-        display:block;
-        background-color: yellow;
-        min-width: 200px;
-        border-radius: 5px;
-        color:black;
-                       
-      }
-
-
-      a:link{
-          text-decoration: none;
-      }
+a:link {
+  text-decoration: none;
+}
 
 /* .zoomButton {
     background-color: red;

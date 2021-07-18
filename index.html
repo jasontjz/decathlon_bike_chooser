@@ -4,484 +4,519 @@
     <meta charset="utf-8" />
     <title>DECATHLON SMART BIKE CHOOSER</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+    </style>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <!-- <script src="./zoom.min.js"></script> -->
     <!-- <script src="slider_carousel.js"></script> -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    
-    <div id = 'title'>
-      <h1>
-        I CHOOSE MY BIKE
-      </h1>
+    <div id="title">
+      <h1>I CHOOSE MY BIKE</h1>
     </div>
 
-    <div id = 'intro_main'>
+    <div class="image_carousel">
+      <img
+        src="https://contents.mediadecathlon.com/p2085465/k$479eadf0c8a4e276b6cf0adfe3cf920c/ROCKRIDER%20VTT%20AM%20100%20HARDTAIL.jpg?f=1000x1000"
+        width="300px"
+      />
+      <img
+        src="https://contents.mediadecathlon.com/p2012687/k$5ec6b9e82de980a4e0f31e04bcfa45a3/ELOPS%20SIEGE%20BEBE%20100%20PORTE%20BAGAGES.jpg?f=1000x1000"
+        width="300px"
+      />
+      <img
+        src="https://contents.mediadecathlon.com/p1965420/k$3a89f25f6990d4cf393e1f907b4d2abf/TRIBAN%20TRIBAN%20REGULAR%20FEMME%20EMERAUDE.jpg?f=1000x1000"
+        width="300px"
+      />
+      <img
+        src="https://contents.mediadecathlon.com/p1563441/k$6408373248b59f8ad426d104a0577d4c/Riverside%20500%20C1%20Riverside%20500%20C2.jpg?f=1000x1000"
+        width="300px"
+      />
+      <img
+        src="https://contents.mediadecathlon.com/p1801274/k$ba1b90a167c49dc2195c26d687ca0f82/B%20TWIN%20VELO%20PLIANT%20TILT%20500%20BLEU.jpg?f=1000x1000"
+        width="300px"
+      />
+    </div>
+
+    <div id="intro_main">
       <p>
-        Deciding what bike to buy? Why not let us help you choose?<br>
-        With this Smart Bike Chooser, we hope we can help you on your journey<br>
-        towards a healthy lifestyle and enjoying the outdoors on two wheels!<br>
-        <br>
+        Deciding what bike to buy? Why not let us help you choose?<br />
+        With this Smart Bike Chooser, we hope we can help you on your journey<br />
+        towards a healthy lifestyle and enjoying the outdoors on two wheels!<br />
+        <br />
         Lets start by answering some simple questions about yourself!
       </p>
+
+      <div id="biodata_container">
+        <div class="biodata_title">Name <input type="text" /></div>
+        <div class="biodata_title">Email <input type="text" /></div>
+      </div>
+
+      <div>
+        <button onclick="scrollToTop(user_intention_container)">
+          LETS ROLL!
+        </button>
+      </div>
     </div>
 
-    <div id='biodata_container'>
-      <div class='biodata_title'> Name <input type="text"></div>
-      <div class='biodata_title'> Email <input type="text"></div>
-     </div>
-  
-    </div>
+    <div class="spacer"></div>
 
-    
-    <div>
-      <button onclick="scrollToTop(user_intention_container)">LETS ROLL!</button>
-    </div>
-
-  
-
-    <div class='spacer'> 
-
-    </div>
-
-    <div id = 'user_intention_container'>
+    <div id="user_intention_container">
       <h2>Where do you intend to ride?</h2>
-      
-      <div class='user_intention_choose'>
-        <img class='user_intention' onclick="scrollToTop(road_cycling)" style=width:300px src = https://contents.mediadecathlon.com/p1918123/k$2e3c0d957580996fe46fd9a7e7f8efed/1180x0/2304pt2160/4608xcr2592/Lornie%2520Rd.jpg>
-        <h3>Open Roads</h3>
+
+      <div class="user_intention_choose">
+        <img class='user_intention' onclick="scrollToTop(road_cycling)"
+        style=width:300px src =
+        https://contents.mediadecathlon.com/p1961248/k$97f4cdf54d6f7b74d2b5bcb71a772310/TRIBAN%20VELO%20GRAVEL%20FEMME%20GRVLW120.jpg?f=1000x1000>
+        <h3>Roads</h3>
       </div>
 
-      <div class='user_intention_choose'>
-        <img class='user_intention' onclick="scrollToTop(urban_hybrid)" style=width:300px src = https://contents.mediadecathlon.com/p1918123/k$2e3c0d957580996fe46fd9a7e7f8efed/1180x0/2304pt2160/4608xcr2592/Lornie%2520Rd.jpg>
-        <h3>Park Connectors</h3>
+      <div class="user_intention_choose">
+        <img class='user_intention' onclick="scrollToTop(urban_hybrid)"
+        style=width:300px src =
+        https://contents.mediadecathlon.com/p1985163/k$ce482bd7924c4be3165960c5ceffe88b/OLAIAN%20SURF%20confirme%20PE21%20homme%20femme.jpg?f=1000x1000>
+        <h3>Pavements</h3>
       </div>
 
-      <div class='user_intention_choose'>
-        <img class='user_intention' onclick="scrollToTop(mountain_biking)" style=width:300px src = https://contents.mediadecathlon.com/p1918123/k$2e3c0d957580996fe46fd9a7e7f8efed/1180x0/2304pt2160/4608xcr2592/Lornie%2520Rd.jpg>
+      <div class="user_intention_choose">
+        <img class='user_intention' onclick="scrollToTop(mountain_biking)"
+        style=width:300px src =
+        https://contents.mediadecathlon.com/p2039755/k$a67dc9f02377ca65162d9de34d808bbb/ROCKRIDER%20PANTALON%20VTT%20ST%20500%20H%20BLK.jpg?f=1000x1000>
         <h3>Off-Road Trails</h3>
       </div>
 
-      <div class='user_intention_choose'>
-        <img class='user_intention' onclick="scrollToTop(urban_hybrid)" style=width:300px src = https://contents.mediadecathlon.com/p1918123/k$2e3c0d957580996fe46fd9a7e7f8efed/1180x0/2304pt2160/4608xcr2592/Lornie%2520Rd.jpg>
-        <h3>Open Roads & Park Connectors</h3>
+      <div class="user_intention_choose">
+        <img class='user_intention' onclick="scrollToTop(urban_hybrid)"
+        style=width:300px src =
+        https://contents.mediadecathlon.com/p2002864/k$d142cbad4a3f13dfd9b16dde22e3a742/ELOPS%20LD%20500%20F.jpg?f=1000x1000>
+        <h3>Roads & Pavement</h3>
       </div>
 
-      <div class='user_intention_choose'>
-        <img class='user_intention' onclick="scrollToTop(hybrid_cycling)" style=width:300px src = https://contents.mediadecathlon.com/p1918123/k$2e3c0d957580996fe46fd9a7e7f8efed/1180x0/2304pt2160/4608xcr2592/Lornie%2520Rd.jpg>
-        <h3>Open Roads & Off-Road</h3>
+      <div class="user_intention_choose">
+        <img class='user_intention' onclick="scrollToTop(hybrid_cycling)"
+        style=width:300px src =
+        https://contents.mediadecathlon.com/p1962083/k$32bef88fa708dd63d9aa9c634d18a86c/TRIBAN%20VELO%20GRAVEL%20FEMME%20GRVLW120.jpg?f=1000x1000>
+        <h3>Roads & Off-Road</h3>
       </div>
 
-      <div class='user_intention_choose'>
-        <img class='user_intention' onclick="scrollToTop(hybrid_cycling)" style=width:300px src = https://contents.mediadecathlon.com/p1918123/k$2e3c0d957580996fe46fd9a7e7f8efed/1180x0/2304pt2160/4608xcr2592/Lornie%2520Rd.jpg>
-        <h3>Park Connectors & Off-Road</h3>
+      <div class="user_intention_choose">
+        <img class='user_intention' onclick="scrollToTop(hybrid_cycling)"
+        style=width:300px src =
+        https://contents.mediadecathlon.com/p1961273/k$aa0386d7eb5ab432ed3c53cb8a64c0a5/TRIBAN%20GRVL%20900%20TI%20LTD.jpg?f=1000x1000>
+        <h3>Pavement & Off-Road</h3>
       </div>
-
     </div>
 
-    <div class='spacer'> 
-    </div>
+    <div class="spacer"></div>
 
     <div id="urban_hybrid">
-    <h3>What will you mostly be using your bike for?</h3>
-    <button onclick="scrollToTop(urban_cycling)">Utility - buying groceries, riding to work or school nearby</button>
-    <button onclick="scrollToTop(hybrid_cycling)">Sport - getting some exercise or leisure riding in the park</button>
-
+      <h3>What will you mostly be using your bike for?</h3>
+      <button onclick="scrollToTop(urban_cycling)">
+        Utility - buying groceries, riding to work or school nearby
+      </button>
+      <button onclick="scrollToTop(hybrid_cycling)">
+        Sport - getting some exercise or leisure riding in the park
+      </button>
     </div>
 
-    <div class='spacer'> 
-    </div>
+    <div class="spacer"></div>
 
-    <div id = 'layer2_container' class=layer_container>
-      LAYER 2
-
-    <div id='urban_cycling' class='layer_div'>
-    <h3>Urban Cycling</h3>
-    <p>Cycling is one of the best ways to get around in Singapore - not only are you in control of your own timing, you get a good workout too! As more and more park connectors and bike lanes are built, there will be less reasons not to cycle as a form of transportation!<br>
-      <br>
-      Durable and Well-Designed City Bikes<br>
-      Our collection of city bikes are inspired by Dutch-style bikes that are both elegant yet functional. At Decathlon, our product designers and managers are cyclists too! This is why you will find many practical and well-thought features on our city bikes. The step-through steel frame is sturdy and will last you through many years of service. We have even made sure to integrate a rear rack on every city bike - after all, grocery shopping and hauling light goods will most probably be one of its main tasks!<br>
-    </p>
-    <button onclick="scrollToTop(city_folding)">DISCOVER MORE</button>
-    <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
-    </div>
-
-    <div id='hybrid_cycling' class='layer_div'>
-    <h3>Hybrid Cycling</h3>
-    <p>If you can't decide whether you will spend more time riding on the road and PCNs or if you might want to go somewhere a little more rugged, instead of choosing between a road bike or a mountain bike, why not choose a Hybrid bike?<br>
-      <br>
-      What is a Hybrid Bike?<br>
-      A hybrid bike as its name suggests is a mix between a road bike, mountain bike and even a city bike. The frame is designed for the rider to sit upright like on a city bike and not as aggressive as a road or even mountain bike. The tyres are wider and knobbier than a road bike for more ruggedness, yet skinnier and smoother than a mountain bike for better rolling speed on the roads. On some models, the bike is equipped with a suspension fork to smooth out bumps, yet does not bounce as much as on a mountain bike in order to achieve the perfect balance between comfort and efficiency. And while it is not equipped with a rack by default like on a city bike, the frame has the correct mounting points and Decathlon Singapore offers a wide choice of racks to choose from (available to purchase separately). It is truly a hybrid in all senses of the word, offering you the best of all the cycling worlds!<br>
-      <br>
-      Hybrid Bicycles for the Whole Family<br>
-      We have both Adult and Kids hybrid bikes available in our range. The Adult Hybrid Bikes come in different varieties and price points, offering more features like lighter frames, suspension forks, more powerful brakes and increased gearing at different price levels. The Kids Hybrid Bikes are available in 20" and 24" wheel sizes to cater to different ages and heights, starting from 6 years old all the way up to 12.<br>
-    </p>
-    <button onclick="scrollToTop(hybrid_gate2_features)">DISCOVER MORE</button>
-    <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
-    </div>
-  
-
-    <div id='road_cycling' class='layer_div'>
-    <h3>Road Cycling</h3>
-    <p>As the sport of road cycling has grown exponentially in the past few decades, so too have different riding styles emerged and become more distinct. At Decathlon, we recognize this divergence and our product designers & managers have therefore heeded the call by creating two distinct sub-brands according to riding style - Triban and Van Rysel, for the endurance and racing markets respectively.<br>
-      <br>
-      We have a range of bikes that are suitable for all skill levels - from beginners to experts.<br>
-      <br>
-      We also have other road bike accessories which include road bike shoes. Road bike shoes are important in bringing the most out of your road cycling journey. It will help transmit your pedaling power into the bicycle. We also assure comfort and quality with our road bike shoes.<br>
-    </p>
-    <button onclick="scrollToTop(road_cycling_style1)">DISCOVER MORE</button>
-    <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
-    </div>
-
-    <div id='mountain_biking' class='layer_div'>
-    <h3>Mountain Biking</h3>
-    <p>Discover nature & get lost outdoors with Rockrider bicycles! Decathlon Singapore's mountain bikes are made for the trails and hills, all packaged in one of the best price to performance ratios around.<br>
-      <br>
-      Affordable, Well-designed Mountain Bikes<br>
-      Decathlon's in-house mountain bike brand, Rockrider consist of experienced riders, engineers and product managers. So you can rest assured that you are getting the best-designed and well-specced bike for your money! The frames are designed in-house, and our vast supply chain ensures we are able to offer you the best performance at unmatched prices.<br>
-    </p>
-    <button onclick="scrollToTop(mountain_biking_style1)">DISCOVER MORE</button>
-    <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
-    </div>
-
-
-  </div>
-
-
-  <div class='spacer'>
-    
-
-  </div>
-
-  <div id='layer3_container' class=layer_container>
-    LAYER 3
-  
-    <div id='city_folding'>
-      <h3>Traditional City Bike or Folding Bike?</h3>
-      <p>
-        Will you need to combine cycling with public transport? Or perhaps you don't have much space at home or a proper bicycle parking lot at your office. If that is the case, a folding bike could be a good choice. Otherwise, a traditional city bike would offer much more carrying capacity.
-
-      </p>
-      <button onclick="scrollToTop(folding_bikes)">I NEED A COMPACT, FOLDABLE BIKE</button>
-      <button onclick="scrollToTop(trad_city_bikes_style1)">I NEED MORE CARRYING CAPACITY</button>
-      <button onclick="scrollToTop(urban_cycling)">GO BACK</button>
+    <div id="layer2_container" class="layer_container">
+      <div id="urban_cycling" class="layer_div">
+        <h3>Urban Cycling</h3>
+        <p>
+          Cycling is one of the best ways to get around in Singapore - not only
+          are you in control of your own timing, you get a good workout too! As
+          more and more park connectors and bike lanes are built, there will be
+          less reasons not to cycle as a form of transportation!<br />
+          <br />
+          Durable and Well-Designed City Bikes<br />
+          Our collection of city bikes are inspired by Dutch-style bikes that
+          are both elegant yet functional. At Decathlon, our product designers
+          and managers are cyclists too! This is why you will find many
+          practical and well-thought features on our city bikes. The
+          step-through steel frame is sturdy and will last you through many
+          years of service. We have even made sure to integrate a rear rack on
+          every city bike - after all, grocery shopping and hauling light goods
+          will most probably be one of its main tasks!<br />
+        </p>
+        <button onclick="scrollToTop(city_folding)">DISCOVER MORE</button>
+        <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
       </div>
 
-      <div id='hybrid_gate2_features' class='layer_div'>
-        <h3>Features & Complexity</h3>
+      <div id="hybrid_cycling" class="layer_div">
+        <h3>Hybrid Cycling</h3>
         <p>
-          Hybrid bikes are practical bikes that can also be used for sport.
+          If you can't decide whether you will spend more time riding on the
+          road and PCNs or if you might want to go somewhere a little more
+          rugged, instead of choosing between a road bike or a mountain bike,
+          why not choose a Hybrid bike?<br />
+          <br />
+          What is a Hybrid Bike?<br />
+          A hybrid bike as its name suggests is a mix between a road bike,
+          mountain bike and even a city bike. The frame is designed for the
+          rider to sit upright like on a city bike and not as aggressive as a
+          road or even mountain bike. The tyres are wider and knobbier than a
+          road bike for more ruggedness, yet skinnier and smoother than a
+          mountain bike for better rolling speed on the roads. On some models,
+          the bike is equipped with a suspension fork to smooth out bumps, yet
+          does not bounce as much as on a mountain bike in order to achieve the
+          perfect balance between comfort and efficiency. And while it is not
+          equipped with a rack by default like on a city bike, the frame has the
+          correct mounting points and Decathlon Singapore offers a wide choice
+          of racks to choose from (available to purchase separately). It is
+          truly a hybrid in all senses of the word, offering you the best of all
+          the cycling worlds!<br />
+          <br />
+          Hybrid Bicycles for the Whole Family<br />
+          We have both Adult and Kids hybrid bikes available in our range. The
+          Adult Hybrid Bikes come in different varieties and price points,
+          offering more features like lighter frames, suspension forks, more
+          powerful brakes and increased gearing at different price levels. The
+          Kids Hybrid Bikes are available in 20" and 24" wheel sizes to cater to
+          different ages and heights, starting from 6 years old all the way up
+          to 12.<br />
         </p>
-        <button onclick="scrollToTop(divbike_riverside100_120)">I WANT LOW MAINTENANCE & SIMPLICITY</button>
-        <button onclick="scrollToTop(hybrid_gate3b_rugged_flexible)">I WANT MORE SPEED & COMFORT</button>
+        <button onclick="scrollToTop(hybrid_gate2_features)">
+          DISCOVER MORE
+        </button>
+        <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
+      </div>
+
+      <div id="road_cycling" class="layer_div">
+        <h3>Road Cycling</h3>
+        <p>
+          As the sport of road cycling has grown exponentially in the past few
+          decades, so too have different riding styles emerged and become more
+          distinct. At Decathlon, we recognize this divergence and our product
+          designers & managers have therefore heeded the call by creating two
+          distinct sub-brands according to riding style - Triban and Van Rysel,
+          for the endurance and racing markets respectively.<br />
+          <br />
+          We have a range of bikes that are suitable for all skill levels - from
+          beginners to experts.<br />
+          <br />
+          We also have other road bike accessories which include road bike
+          shoes. Road bike shoes are important in bringing the most out of your
+          road cycling journey. It will help transmit your pedaling power into
+          the bicycle. We also assure comfort and quality with our road bike
+          shoes.<br />
+        </p>
+        <button onclick="scrollToTop(road_cycling_style1)">
+          DISCOVER MORE
+        </button>
+        <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
+      </div>
+
+      <div id="mountain_biking" class="layer_div">
+        <h3>Mountain Biking</h3>
+        <p>
+          Discover nature & get lost outdoors with Rockrider bicycles! Decathlon
+          Singapore's mountain bikes are made for the trails and hills, all
+          packaged in one of the best price to performance ratios around.<br />
+          <br />
+          Affordable, Well-designed Mountain Bikes<br />
+          Decathlon's in-house mountain bike brand, Rockrider consist of
+          experienced riders, engineers and product managers. So you can rest
+          assured that you are getting the best-designed and well-specced bike
+          for your money! The frames are designed in-house, and our vast supply
+          chain ensures we are able to offer you the best performance at
+          unmatched prices.<br />
+        </p>
+        <button onclick="scrollToTop(mountain_biking_style1)">
+          DISCOVER MORE
+        </button>
+        <button onclick="scrollToTop(user_intention_container)">GO BACK</button>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div id="layer3_container" class="layer_container">
+      <div id="city_folding">
+        <h3>Traditional City Bike or Folding Bike?</h3>
+        <p>
+          Will you need to combine cycling with public transport? Or perhaps you
+          don't have much space at home or a proper bicycle parking lot at your
+          office. If that is the case, a folding bike could be a good choice.
+          Otherwise, a traditional city bike would offer much more carrying
+          capacity.
+        </p>
+        <button onclick="scrollToTop(folding_bikes)">
+          I NEED A COMPACT, FOLDABLE BIKE
+        </button>
+        <button onclick="scrollToTop(trad_city_bikes_style1)">
+          I NEED MORE CARRYING CAPACITY
+        </button>
+        <button onclick="scrollToTop(urban_cycling)">GO BACK</button>
+      </div>
+
+      <div id="hybrid_gate2_features" class="layer_div">
+        <h3>Features & Complexity</h3>
+        <p>Hybrid bikes are practical bikes that can also be used for sport.</p>
+        <button onclick="scrollToTop(divbike_riverside100_120)">
+          I WANT LOW MAINTENANCE & SIMPLICITY
+        </button>
+        <button onclick="scrollToTop(hybrid_gate3b_rugged_flexible)">
+          I WANT MORE SPEED & COMFORT
+        </button>
         <button onclick="scrollToTop(hybrid_cycling)">GO BACK</button>
-        </div>
+      </div>
 
-        <div id='road_cycling_style1' class='layer_div'>
-          <h3>Road Cycling</h3>
-          <p>
-            Road cycling is divided into Road Endurance Riding & Road Racing
-          </p>
-          <button onclick="scrollToTop(road_endurance)">ROAD CYCLING</button>
-          <button onclick="scrollToTop(road_racing)">ROAD RACING</button>
-          <button onclick="scrollToTop(road_cycling)">GO BACK</button>
-          </div>
+      <div id="road_cycling_style1" class="layer_div">
+        <h3>Road Cycling</h3>
+        <p>Road cycling is divided into Road Endurance Riding & Road Racing</p>
+        <button onclick="scrollToTop(road_endurance)">ROAD CYCLING</button>
+        <button onclick="scrollToTop(road_racing)">ROAD RACING</button>
+        <button onclick="scrollToTop(road_cycling)">GO BACK</button>
+      </div>
 
-          <div id='mountain_biking_style1' class='layer_div'>
-            <h3>Mountain Biking</h3>
-            <p>
-              There are 4 official mountain bike trails or parks in Singapore. 
-            </p>
-            <button onclick="scrollToTop(mtb_st)">SPORT TRAIL</button>
-            <button onclick="scrollToTop(mtb_xc)">CROSS COUNTRY</button>
-            <button onclick="scrollToTop(mtb_am)">ALL MOUNTAIN</button>
-            <button onclick="scrollToTop(mountain_biking)">GO BACK</button>
-            </div>    
-    
-
-    </div>
-    
-    <div class='spacer'>
-
+      <div id="mountain_biking_style1" class="layer_div">
+        <h3>Mountain Biking</h3>
+        <p>There are 4 official mountain bike trails or parks in Singapore.</p>
+        <button onclick="scrollToTop(mtb_st)">SPORT TRAIL</button>
+        <button onclick="scrollToTop(mtb_xc)">CROSS COUNTRY</button>
+        <button onclick="scrollToTop(mtb_am)">ALL MOUNTAIN</button>
+        <button onclick="scrollToTop(mountain_biking)">GO BACK</button>
+      </div>
     </div>
 
-    <div id='layer4_container' class=layer_container>
-      LAYER 4
+    <div class="spacer"></div>
 
-      <div id='folding_bikes' class='layer_div'>
+    <div id="layer4_container" class="layer_container">
+      <div id="folding_bikes" class="layer_div">
         <h3>Folding Bikes</h3>
         <p>
-          Folding and foldable bikes, also affectionately known as 'foldies' are an extremely popular type of bicycle in Singapore owing to their easily stored and transportable nature. Being compact, they are also a popular choice among smaller riders, ladies & children!<br>
-          <br>
-          <br>At Decathlon Singapore, we have a range of affordable and wallet-friendly options for foldable bikes in Singapore.
-          </p>
-        <button onclick="scrollToTop(folding_bikes_style1)">DISCOVER MORE</button>
+          Folding and foldable bikes, also affectionately known as 'foldies' are
+          an extremely popular type of bicycle in Singapore owing to their
+          easily stored and transportable nature. Being compact, they are also a
+          popular choice among smaller riders, ladies & children!<br />
+          <br />
+          <br />At Decathlon Singapore, we have a range of affordable and
+          wallet-friendly options for foldable bikes in Singapore.
+        </p>
+        <button onclick="scrollToTop(folding_bikes_style1)">
+          DISCOVER MORE
+        </button>
         <button onclick="scrollToTop(city_folding)">GO BACK</button>
-        </div>
+      </div>
 
-        <div id='trad_city_bikes' class='layer_div'>
+      <div id="trad_city_bikes" class="layer_div">
         <h3>Traditional Urban Bikes</h3>
         <p>
-          Looking for a bike to commute in the city? Or perhaps you just need to cycle to the supermarket every now and then.<br>
-          <br>
-        Whatever your needs, if you are looking for a bike that can get you from point A to B while hauling your groceries (or your kids), you've come to the right place!<br>
-          <br>
-        Our city bikes are designed for easy mounting and dismounting, as well as transportation of goods. All our city bikes have integrated racks, kickstands and fenders, making them the practical choice in any situation.<br>
-          <br>
-          At Decathlon Singapore, we have a range of affordable and wallet-friendly options for foldable bikes in Singapore.
-          </p>
-        <button onclick="scrollToTop(trad_city_bikes_style1)">DISCOVER MORE</button>
+          Looking for a bike to commute in the city? Or perhaps you just need to
+          cycle to the supermarket every now and then.<br />
+          <br />
+          Whatever your needs, if you are looking for a bike that can get you
+          from point A to B while hauling your groceries (or your kids), you've
+          come to the right place!<br />
+          <br />
+          Our city bikes are designed for easy mounting and dismounting, as well
+          as transportation of goods. All our city bikes have integrated racks,
+          kickstands and fenders, making them the practical choice in any
+          situation.<br />
+          <br />
+          At Decathlon Singapore, we have a range of affordable and
+          wallet-friendly options for foldable bikes in Singapore.
+        </p>
+        <button onclick="scrollToTop(trad_city_bikes_style1)">
+          DISCOVER MORE
+        </button>
         <button onclick="scrollToTop(city_folding)">GO BACK</button>
-        </div>
-  
-        <div id='hybrid_gate3b_rugged_flexible' class='layer_div'>
-          <h3>Ruggedness & Flexibility</h3>
-          <p>
-            If you can't decide whether you will spend more time riding on the road and PCNs or if you might want to go somewhere a little more rugged, instead of choosing between a road bike or a mountain bike, why not choose a Hybrid bike?
-          </p>
-          <button onclick="scrollToTop(divbike_st100)">I WILL GO OFF-ROAD SOMETIMES</button>
-          <button onclick="scrollToTop(divbike_riverside500_900)">I WILL STICK TO THE PCN/PAVEMENT</button>
-          <button onclick="scrollToTop(hybrid_gate2_features)">GO BACK</button>
-          </div>
-  
-          <div id='road_endurance' class='layer_div'>
-            <h3>Road Endurance Cycling</h3>
-            <p>
-              Road Endurance Cycling prioritize long distances, and the bikes feature comfortable geometry, sturdiness and practical features like rack mounts.<br>
-              Road endurance riders are typically riding not only to clock miles, but to enjoy the sights and sounds along the way.<br>
-              The average pace over a 2 hour ride is usually around 20-30km/h and may include a stop or two.<br>
-              Road endurance riders will also enjoy participating in Gran Fondos or Century rides in a large group, with an emphasis on finishing the ride as opposed to coming in first.<br>
-              In other words, no stress - chill and enjoy the ride! ;)
-            </p>
-            <button onclick="scrollToTop(road_endurance_style1)">DISCOVER MORE</button>
-            <button onclick="scrollToTop(road_cycling_style1)">GO BACK</button>
-            </div>
+      </div>
 
-            <div id='road_racing' class='layer_div'>
-              <h3>Road Racing</h3>
-              <p>
-                Road Racing emphasizes speed, and thus the bikes are often scrutinized for their stiffness, light weight and aerodynamic properties.<br>
-                As such, be prepared to sacrifice comfort for speed.<br>
-                Worth it in the end, when you out-sprint the pack at the finish line!<br>
-              </p>
-              <button onclick="scrollToTop(road_racing_style1)">DISCOVER MORE</button>
-              <button onclick="scrollToTop(road_cycling_style1)">GO BACK</button>
-              </div>
+      <div id="hybrid_gate3b_rugged_flexible" class="layer_div">
+        <h3>Ruggedness & Flexibility</h3>
+        <p>
+          If you can't decide whether you will spend more time riding on the
+          road and PCNs or if you might want to go somewhere a little more
+          rugged, instead of choosing between a road bike or a mountain bike,
+          why not choose a Hybrid bike?
+        </p>
+        <button onclick="scrollToTop(divbike_st100)">
+          I WILL GO OFF-ROAD SOMETIMES
+        </button>
+        <button onclick="scrollToTop(divbike_riverside500_900)">
+          I WILL STICK TO THE PCN/PAVEMENT
+        </button>
+        <button onclick="scrollToTop(hybrid_gate2_features)">GO BACK</button>
+      </div>
 
-  
-            <div id='mtb_st' class='layer_div'>
-              <h3>Sport Trail Mountainbiking</h3>
-              <p>
-                Discover nature on two wheels 
-              </p>
-              <button onclick="scrollToTop(divbike_st500_series)">DISCOVER THE BIKES</button>
-              <button onclick="scrollToTop(mountain_biking_style1)">GO BACK</button>
-              </div>    
+      <div id="road_endurance" class="layer_div">
+        <h3>Road Endurance Cycling</h3>
+        <p>
+          Road Endurance Cycling prioritize long distances, and the bikes
+          feature comfortable geometry, sturdiness and practical features like
+          rack mounts.<br />
+          Road endurance riders are typically riding not only to clock miles,
+          but to enjoy the sights and sounds along the way.<br />
+          The average pace over a 2 hour ride is usually around 20-30km/h and
+          may include a stop or two.<br />
+          Road endurance riders will also enjoy participating in Gran Fondos or
+          Century rides in a large group, with an emphasis on finishing the ride
+          as opposed to coming in first.<br />
+          In other words, no stress - chill and enjoy the ride! ;)
+        </p>
+        <button onclick="scrollToTop(road_endurance_style1)">
+          DISCOVER MORE
+        </button>
+        <button onclick="scrollToTop(road_cycling_style1)">GO BACK</button>
+      </div>
 
-              <div id='mtb_xc' class='layer_div'>
-                <h3>Cross Country Mountainbiking</h3>
-                <p>
-                  Cover as much ground as quickly as possible! 
-                </p>
-                <button onclick="scrollToTop(divbike_xc100_series)">DISCOVER THE BIKES</button>
-                <button onclick="scrollToTop(mountain_biking_style1)">GO BACK</button>
-                </div>   
+      <div id="road_racing" class="layer_div">
+        <h3>Road Racing</h3>
+        <p>
+          Road Racing emphasizes speed, and thus the bikes are often scrutinized
+          for their stiffness, light weight and aerodynamic properties.<br />
+          As such, be prepared to sacrifice comfort for speed.<br />
+          Worth it in the end, when you out-sprint the pack at the finish
+          line!<br />
+        </p>
+        <button onclick="scrollToTop(road_racing_style1)">DISCOVER MORE</button>
+        <button onclick="scrollToTop(road_cycling_style1)">GO BACK</button>
+      </div>
 
-                <div id='mtb_am' class='layer_div'>
-                  <h3>All Mountain Riding</h3>
-                  <p>
-                    What goes up, must come down! 
-                  </p>
-                  <button onclick="scrollToTop(divbike_am100)">DISCOVER THE BIKES</button>
-                  <button onclick="scrollToTop(mountain_biking_style1)">GO BACK</button>
-                  </div>   
+      <div id="mtb_st" class="layer_div">
+        <h3>Sport Trail Mountainbiking</h3>
+        <p>Discover nature on two wheels</p>
+        <button onclick="scrollToTop(divbike_st500_series)">
+          DISCOVER THE BIKES
+        </button>
+        <button onclick="scrollToTop(mountain_biking_style1)">GO BACK</button>
+      </div>
 
+      <div id="mtb_xc" class="layer_div">
+        <h3>Cross Country Mountainbiking</h3>
+        <p>Cover as much ground as quickly as possible!</p>
+        <button onclick="scrollToTop(divbike_xc100_series)">
+          DISCOVER THE BIKES
+        </button>
+        <button onclick="scrollToTop(mountain_biking_style1)">GO BACK</button>
+      </div>
+
+      <div id="mtb_am" class="layer_div">
+        <h3>All Mountain Riding</h3>
+        <p>What goes up, must come down!</p>
+        <button onclick="scrollToTop(divbike_am100)">DISCOVER THE BIKES</button>
+        <button onclick="scrollToTop(mountain_biking_style1)">GO BACK</button>
+      </div>
     </div>
 
-    <div class='spacer'>
+    <div class="spacer"></div>
 
-    </div>
-
-
-    <div id='layer5_container' class=layer_container>
-      LAYER 5
-
-
-      <div id='folding_bikes_style1' class='layer_div'>
+    <div id="layer5_container" class="layer_container">
+      <div id="folding_bikes_style1" class="layer_div">
         <h3>Folding Bike Types</h3>
         <p>
           Super compact or More gears?
-          <br>At Decathlon Singapore, we have a range of affordable and wallet-friendly options for foldable bikes in Singapore.
-          </p>
-        <button onclick="scrollToTop(divbike_tilt500xs)">I WANT THE SMALLEST, LIGHTEST BIKE POSSIBLE</button>
-        <button onclick="scrollToTop(divbike_tilt100)">I WANT SOMETHING ECONOMICAL, STURDY & FUNCTIONAL </button>
-        <button onclick="scrollToTop(folding_bikes_style2)">I NEED MULTIPLE SPEEDS/GEARS FOR CLIMBING</button>
+          <br />At Decathlon Singapore, we have a range of affordable and
+          wallet-friendly options for foldable bikes in Singapore.
+        </p>
+        <button onclick="scrollToTop(divbike_tilt500xs)">
+          I WANT THE SMALLEST, LIGHTEST BIKE POSSIBLE
+        </button>
+        <button onclick="scrollToTop(divbike_tilt100)">
+          I WANT SOMETHING ECONOMICAL, STURDY & FUNCTIONAL
+        </button>
+        <button onclick="scrollToTop(folding_bikes_style2)">
+          I NEED MULTIPLE SPEEDS/GEARS FOR CLIMBING
+        </button>
         <button onclick="scrollToTop(folding_bikes)">GO BACK</button>
-        </div>
+      </div>
 
-        <div id='trad_city_bikes_style1' class='layer_div'>
+      <div id="trad_city_bikes_style1" class="layer_div">
         <h3>Terrain: Hilly or Flat</h3>
-        <p>
-         Different types of city bikes
-          </p>
-        <button onclick="scrollToTop(trad_city_bikes_style2)">I WILL BE RIDING MOSTLY ON FLAT ROADS</button>
-        <button onclick="scrollToTop(divbike_elops120_120eu)">I NEED GEARS FOR OCCASIONAL UPHILLS</button>
+        <p>Different types of city bikes</p>
+        <button onclick="scrollToTop(trad_city_bikes_style2)">
+          I WILL BE RIDING MOSTLY ON FLAT ROADS
+        </button>
+        <button onclick="scrollToTop(divbike_elops120_120eu)">
+          I NEED GEARS FOR OCCASIONAL UPHILLS
+        </button>
         <button onclick="scrollToTop(trad_city_bikes)">GO BACK</button>
-        </div>
-  
-        
-  
-          <div id='road_endurance_style1' class='layer_div'>
-            <h3>Road Endurance Bike Types</h3>
-            <p>
-             SIMPLICITY: Fewer gears & caliper brakes = lower maintenance<br>
-             TECHNCITY: More gears, disc brakes & lighter parts = better performance
-            </p>
-            <button onclick="scrollToTop(divbike_triban100_series)">I PREFER SIMPLICITY</button>
-            <button onclick="scrollToTop(divbike_triban500_series)">I WANT TECHNICITY</button>
-            <button onclick="scrollToTop(road_endurance)">GO BACK</button>
-            </div>
+      </div>
 
-            <div id='road_racing_style1' class='layer_div'>
-              <h3>Road Racing Bike Types</h3>
-              <p>
-              PURIST: Caliper brakes, featherweight carbon frame<br>
-              TECHNOLOGIST: Disc brakes, stiff alloy frame with the latest standards
-              </p>
-              <button onclick="scrollToTop(divbike_rcr900af)">I AM A PURIST</button>
-              <button onclick="scrollToTop(divbike_rcr900cf)">I AM A TECHNOLOGIST</button>
-              <button onclick="scrollToTop(road_racing)">GO BACK</button>
-              </div>
+      <div id="road_endurance_style1" class="layer_div">
+        <h3>Road Endurance Bike Types</h3>
+        <p>
+          SIMPLICITY: Fewer gears & caliper brakes = lower maintenance<br />
+          TECHNCITY: More gears, disc brakes & lighter parts = better
+          performance
+        </p>
+        <button onclick="scrollToTop(divbike_triban100_series)">
+          I PREFER SIMPLICITY
+        </button>
+        <button onclick="scrollToTop(divbike_triban500_series)">
+          I WANT TECHNICITY
+        </button>
+        <button onclick="scrollToTop(road_endurance)">GO BACK</button>
+      </div>
+
+      <div id="road_racing_style1" class="layer_div">
+        <h3>Road Racing Bike Types</h3>
+        <p>
+          PURIST: Caliper brakes, featherweight carbon frame<br />
+          TECHNOLOGIST: Disc brakes, stiff alloy frame with the latest standards
+        </p>
+        <button onclick="scrollToTop(divbike_rcr900af)">I AM A PURIST</button>
+        <button onclick="scrollToTop(divbike_rcr900cf)">
+          I AM A TECHNOLOGIST
+        </button>
+        <button onclick="scrollToTop(road_racing)">GO BACK</button>
+      </div>
     </div>
 
-    <div class='spacer'>
+    <div class="spacer"></div>
 
-    </div>
-
-    <div id='layer6_container' class=layer_container>
-      LAYER 6
-
-      <div id='folding_bikes_style2' class='layer_div'>
+    <div id="layer6_container" class="layer_container">
+      <div id="folding_bikes_style2" class="layer_div">
         <h3>Geared Folding Bike Types</h3>
         <p>
           Lightweight or economical?
-          <br>At Decathlon Singapore, we have a range of affordable and wallet-friendly options for foldable bikes in Singapore.
-          </p>
-        <button onclick="scrollToTop(divbike_tilt500)">I PREFER LIGHT WEIGHT & EASE OF HANDLNIG</button>
-        <button onclick="scrollToTop(divbike_tilt120)">I PREFER SOMETHING ECONOMICAL YET RELIABLE</button>
+          <br />At Decathlon Singapore, we have a range of affordable and
+          wallet-friendly options for foldable bikes in Singapore.
+        </p>
+        <button onclick="scrollToTop(divbike_tilt500)">
+          I PREFER LIGHT WEIGHT & EASE OF HANDLNIG
+        </button>
+        <button onclick="scrollToTop(divbike_tilt120)">
+          I PREFER SOMETHING ECONOMICAL YET RELIABLE
+        </button>
         <button onclick="scrollToTop(folding_bikes_style1)">GO BACK</button>
-        </div>
+      </div>
 
-        <div id='trad_city_bikes_style2' class='layer_div'>
+      <div id="trad_city_bikes_style2" class="layer_div">
         <h3>Single Speed City Bikes</h3>
-        <p>
-         Different types of single speed city bikes
-          </p>
-        <button onclick="scrollToTop(divbike_elops100)">I PREFER A LOW FRAME THATS EASIER TO MOUNT</button>
-        <button onclick="scrollToTop(divbike_urbanspeed)">I PREFER AN AGILE COMMUTING BIKE FOR ADVANCED RIDERS</button>
+        <p>Different types of single speed city bikes</p>
+        <button onclick="scrollToTop(divbike_elops100)">
+          I PREFER A LOW FRAME THATS EASIER TO MOUNT
+        </button>
+        <button onclick="scrollToTop(divbike_urbanspeed)">
+          I PREFER AN AGILE COMMUTING BIKE FOR ADVANCED RIDERS
+        </button>
         <button onclick="scrollToTop(trad_city_bikes_style1)">GO BACK</button>
-        </div>
-          
       </div>
+    </div>
 
-      <div class='spacer'>
-        
-      </div>
-  
-      <div id='layer7_container'>
-        LAYER 7
+    <div class="spacer"></div>
 
-
-
-
-
-      
-        </div>
-
-        
-        <div class='spacer'>
-
-        </div>
-
-
-
-        <div id="carouselTilt500" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://contents.mediadecathlon.com/p1490244/k$8a9d726bbe7a6d1b05ce33f131fc7f57/rockrider-st-100-275in-26in-xs-21sp-sport-bike-black.jpg?f=180x180">
-              <h2 class="bike_div_content">Rockrider ST 100 Black</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-            </div>
-            <div class="carousel-item">
-              <img src="https://contents.mediadecathlon.com/p1576602/k$55482559e608d7ead1cca914e50a3212/rockrider-st-100-275in-26in-xs-21sp-sport-bike-yellow.jpg?f=180x180">
-              <h2 class="bike_div_content">Rockrider ST 100 Yellow</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-            </div>
-            <div class="carousel-item">
-              <img src="https://contents.mediadecathlon.com/p1617008/k$919ed9703caafb1a837d00894260abff/rockrider-st-100-275in-26in-xs-21sp-sport-bike-white.jpg?f=180x180">
-              <h2 class="bike_div_content">Rockrider ST 100 White</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTilt500" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselTilt500" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-
-        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://contents.mediadecathlon.com/p1249805/k$472b58b9db34e7ef6da64b754333801f/tilt-120-20in-6sp-folding-bike-red.jpg?f=180x180" class=bike_img>
-              <h2 class="bike_div_content">Tilt 120 Red</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-            </div>
-            <div class="carousel-item">
-              <img src="https://contents.mediadecathlon.com/p1325497/k$ab1e4b9e3e35d34dceb2a94fd5aa0186/tilt-500-20in-7sp-folding-bike-dark-blue.jpg?f=180x180" class=bike_img>
-              <h2 class="bike_div_content">Tilt 500 Blue</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-            </div>
-            <div class="carousel-item">
-              <img src="https://contents.mediadecathlon.com/p1413336/k$ea4c6020e99e349b7f034a53b8eebb00/tilt-500-20in-7sp-folding-bike-yellow.jpg?f=180x180" class=bike_img>
-              <h2 class="bike_div_content">Tilt 500 Yellow</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-            </div>
-          </div>
-
-        </div>
-
-
-    
-
-
-
+    <div id="layer7_container"></div>
 
     <script src="script.js" charset="utf-8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
