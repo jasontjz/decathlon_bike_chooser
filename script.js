@@ -93,35 +93,6 @@ const bikes = [
 const carousel_inner = ['divbike_tilt500xs','divbike_tilt100','divbike_tilt120','divbike_tilt500','divbike_urbanspeed','divbike_elops100','divbike_elops120_120eu','divbike_riverside100_120','divbike_st100','divbike_riverside500_900','divbike_triban100_series','divbike_triban500_series','divbike_rcr900af','divbike_rcr900cf','divbike_st500_series','divbike_xc100_series','divbike_am100']
 
 
-// <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-//           <div class="carousel-indicators">
-//             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-//             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-//             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-//           </div>
-//           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-//             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-//             <span class="visually-hidden">Previous</span>
-//           </button>
-//           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-//             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-//             <span class="visually-hidden">Next</span>
-//           </button>
-//           <div class="carousel-inner">
-//             <div class="carousel-item active">
-//               <img src="https://contents.mediadecathlon.com/p1249805/k$472b58b9db34e7ef6da64b754333801f/tilt-120-20in-6sp-folding-bike-red.jpg?f=180x180" class=bike_img>
-//               <h2 class="bike_div_content">Tilt 120 Red</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-//             </div>
-//             <div class="carousel-item">
-//               <img src="https://contents.mediadecathlon.com/p1325497/k$ab1e4b9e3e35d34dceb2a94fd5aa0186/tilt-500-20in-7sp-folding-bike-dark-blue.jpg?f=180x180" class=bike_img>
-//               <h2 class="bike_div_content">Tilt 500 Blue</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-//             </div>
-//             <div class="carousel-item">
-//               <img src="https://contents.mediadecathlon.com/p1413336/k$ea4c6020e99e349b7f034a53b8eebb00/tilt-500-20in-7sp-folding-bike-yellow.jpg?f=180x180" class=bike_img>
-//               <h2 class="bike_div_content">Tilt 500 Yellow</h2><p class="bike_shortDesc">Get away from it all! Enjoy the great outdoors on two wheels!<br>"Alloy frame, 80mm suspension fork, 27.5in wheels (26in in XS), 21 speeds Weight: 15.8kg Sizing:XS (1.45-1.54m), S (1.55-1.64m), M (1.65-1.74m), L (1.75-1.84m), XL (1.85-1.94m) Kickstand not included"</p><p class="bike_shortDesc">Our most economical bike with suspension</p><ul>Specifications:<li class="bike_specs">Bike Type: Hybrid Bike</li><li class="bike_specs">Wheel Size: 27.5in (26in for XS)</li><li class="bike_specs">Material: Aluminum</li><li class="bike_specs">Speeds: 3x7</li><li class="bike_specs">Brake Type: V-brake</li><li class="bike_specs">Weight: 15.8kg</li></ul>
-//             </div>
-//           </div> 
-
 
 const multipleImageArray = ['divbike_tilt500','divbike_elops120_120eu','divbike_st100','divbike_riverside500_900','divbike_triban100_series','divbike_triban500_series','divbike_st500_series','divbike_xc100_series']
 
@@ -140,35 +111,7 @@ for(let j=0;j<carousel_inner.length;j++){
       carousel_layer_0.setAttribute('data-bs-slide', 'carousel')
       document.querySelector('#layer7_container').appendChild(carousel_layer_0)
       
-      // //create slide indicator Div
-      // const carouselIndicators = document.createElement('div')
-      // carouselIndicators.className='carousel-indicators'
-      // carousel_layer_0.appendChild(carouselIndicators)
-      // //create slide indicator 1
-      // const indicatorSlide1 = document.createElement('button')
-      // indicatorSlide1.type='button'
-      // indicatorSlide1.setAttribute('data-bs-target','#carouselExampleIndicators')
-      // indicatorSlide1.setAttribute('data-bs-slide-to','0')
-      // indicatorSlide1.className='active'
-      // indicatorSlide1.setAttribute('aria-current','true')
-      // indicatorSlide1.setAttribute('aria-label','Slide 1')
-      // carouselIndicators.appendChild(indicatorSlide1)
-      // //create slide indicator 2
-      // const indicatorSlide2 = document.createElement('button')
-      // indicatorSlide2.type='button'
-      // indicatorSlide2.setAttribute('data-bs-target','#carouselExampleIndicators')
-      // indicatorSlide2.setAttribute('data-bs-slide-to','1')
-      // indicatorSlide2.setAttribute('aria-label','Slide 2')
-      // carouselIndicators.appendChild(indicatorSlide2)
-      // //create slide indicator 2
-      // const indicatorSlide3 = document.createElement('button')
-      // indicatorSlide3.type='button'
-      // indicatorSlide3.setAttribute('data-bs-target','#carouselExampleIndicators')
-      // indicatorSlide3.setAttribute('data-bs-slide-to','2')
-      // indicatorSlide3.setAttribute('aria-label','Slide 3')
-      // carouselIndicators.appendChild(indicatorSlide3)
-
-      //create button prev
+       //create button prev
       const buttonPrev=document.createElement('button')
       buttonPrev.className='carousel-control-prev'
       buttonPrev.type='button'
@@ -308,20 +251,49 @@ for(let i=0;i<bikes.length;i++){
    cta.className='cta'
    ctalink.className='cta'
    buttonDiv.appendChild(ctalink)
-   
    //create back button
    const buttonBack = document.createElement('button')
    buttonBack.type='button'
-   buttonBack.className='cta'
+   buttonBack.className='back'
    buttonBack.innerText='GO BACK'
    buttonDiv.appendChild(buttonBack)
    //create home button
    const buttonHome = document.createElement('button')
    buttonHome.type='button'
-   buttonHome.className='cta'
+   buttonHome.className='home'
    buttonHome.innerText='START OVER'
+   buttonBack.target=document.querySelector('#title')
    buttonDiv.appendChild(buttonHome)
+   
 }
+
+// function goBack(target){
+//    target.scrollIntoView({
+//       behavior: "smooth",
+//       block: "start",
+//       inline: "center"
+//    })
+// }
+
+// document.querySelector('.back').addEventListener('click',goBack())
+
+
+
+
+
+
+
+function goHome() {
+   // user_intention.scrollIntoView(true); // Top
+     document.querySelector('#title').scrollIntoView({
+     behavior: "smooth",
+     block: 'start',
+     inline: "center"
+   });
+ }
+
+document.querySelector('.home').addEventListener('click',goHome)
+
 
 
 //create as manyslide indicators as there are child elements within each multiple-bike layer_1
@@ -345,8 +317,6 @@ for(let k=0;k<multipleImageArray.length;k++){
    //loop to find how many child elements within each layer_1 (class = 'carousel-inner, id same as multipleImageArray)
    const layer1 = document.querySelector('#'+multipleImageArray[k])
    const layer1BikeCount = layer1.childElementCount
-   console.log(layer1)
-   console.log(layer1BikeCount)
    //create a loop to create subsequent slide indicators
    for(let l=0;l<layer1BikeCount-1;l++){
       const indicatorSlides = document.createElement('button')
@@ -358,21 +328,7 @@ for(let k=0;k<multipleImageArray.length;k++){
 
    }
    
-   // //create slide indicator 2
-   // const indicatorSlide2 = document.createElement('button')
-   // indicatorSlide2.type='button'
-   // indicatorSlide2.setAttribute('data-bs-target','#carouselExampleIndicators')
-   // indicatorSlide2.setAttribute('data-bs-slide-to','1')
-   // indicatorSlide2.setAttribute('aria-label','Slide 2')
-   // carouselIndicators.appendChild(indicatorSlide2)
-   // //create slide indicator 2
-   // const indicatorSlide3 = document.createElement('button')
-   // indicatorSlide3.type='button'
-   // indicatorSlide3.setAttribute('data-bs-target','#carouselExampleIndicators')
-   // indicatorSlide3.setAttribute('data-bs-slide-to','2')
-   // indicatorSlide3.setAttribute('aria-label','Slide 3')
-   // carouselIndicators.appendChild(indicatorSlide3)
-
+   
 }
 
 

@@ -236,7 +236,7 @@ li{
           justify-content: space-between;
       }
 
-      .cta{
+      .cta, .back, .home{
         margin:auto;
         display:block;
         background-color: yellow;
