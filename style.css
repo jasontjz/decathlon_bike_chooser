@@ -3,6 +3,13 @@ body {
   text-align: center;
 }
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 #title {
   background-color: #0082c3;
   font-family: "Roboto", sans-serif;
@@ -35,6 +42,16 @@ body {
   height: 100px;
 }
 
+#disclaimer {
+  font-size: 10px;
+  display: inline-block;
+  width: 400px;
+}
+.nomail {
+  display: inline-block;
+  vertical-align: top;
+}
+
 button {
   background-color: #fceb05;
   border-radius: 10px;
@@ -45,11 +62,19 @@ button {
   font-family: "roboto", sans-serif;
   font-size: 20px;
   cursor: pointer;
+  margin: 20px;
+}
+
+.user_intention_button {
+  margin-left: 30px;
+  border-radius: 7px;
 }
 
 .user_intention_choose {
   display: inline-block;
   margin: 20px;
+  width: 300px;
+  text-align: center;
 }
 
 h1 {
@@ -67,6 +92,7 @@ h1 {
 
 .user_intention {
   cursor: pointer;
+  margin: 20px;
 }
 
 .biodata_title {
@@ -271,14 +297,22 @@ li {
 }
 
 .cta,
-.back,
-.home {
+.back {
   margin: auto;
   display: block;
   background-color: yellow;
   min-width: 200px;
   border-radius: 5px;
   color: black;
+}
+
+.home {
+  margin: auto;
+  display: block;
+  background-color: #0082c3;
+  min-width: 200px;
+  border-radius: 5px;
+  color: white;
 }
 
 a:link {

@@ -2,6 +2,21 @@
 
 // alert("Welcome to the Decathlon Smart Bike Chooser! We will try our best to help you find the most suitable bike for your needs by asking you some simple questions. Sometimes, nothing beats the human touch, so if you are still unsure, we highly recommend you to talk to any of our friendly & passionate Sports Leaders :)")
 
+const userNameArray = [];
+const userEmailArray = [];
+
+function appendUser() {
+  userNameArray.push(document.querySelector("#username").value);
+  console.log(userNameArray);
+  userEmailArray.push(document.querySelector("#useremail").value);
+  console.log(userEmailArray);
+}
+
+const letsroll = document.querySelector("#letsroll");
+console.log("letsroll");
+
+letsroll.addEventListener("click", appendUser);
+
 const user_intention = document.querySelector("#user_intention");
 
 function scrollToTop(target) {

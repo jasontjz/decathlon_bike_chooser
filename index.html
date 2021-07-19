@@ -52,18 +52,29 @@
       <p>
         Deciding what bike to buy? Why not let us help you choose?<br />
         With this Smart Bike Chooser, we hope we can help you on your journey<br />
-        towards a healthy lifestyle and enjoying the outdoors on two wheels!<br />
+        towards a healthy lifestyle and start enjoying the outdoors on two
+        wheels!<br />
         <br />
-        Lets start by answering some simple questions about yourself!
+        Lets start by answering some simple questions about yourself:
       </p>
 
       <div id="biodata_container">
-        <div class="biodata_title">Name <input type="text" /></div>
-        <div class="biodata_title">Email <input type="text" /></div>
+        <div class="biodata_title">
+          Name <input type="text" id="username" value="john" />
+        </div>
+        <div class="biodata_title">
+          Email <input type="text" id="useremail" value="johnemail" />
+        </div>
+        <div id="disclaimer">
+          <input type="checkbox" class="nomail" />
+          <p class="nomail">
+            I do not wish to receive promotional emails from Decathlon Singapore
+          </p>
+        </div>
       </div>
 
       <div>
-        <button onclick="scrollToTop(user_intention_container)">
+        <button id="letsroll" onclick="scrollToTop(user_intention_container)">
           LETS ROLL!
         </button>
       </div>
@@ -78,42 +89,72 @@
         <img class='user_intention' onclick="scrollToTop(road_cycling)"
         style=width:300px src =
         https://contents.mediadecathlon.com/p1961248/k$97f4cdf54d6f7b74d2b5bcb71a772310/TRIBAN%20VELO%20GRAVEL%20FEMME%20GRVLW120.jpg?f=1000x1000>
-        <h3>Roads</h3>
+        <button
+          class="user_intention_button"
+          onclick="scrollToTop(road_cycling)"
+        >
+          ROAD
+        </button>
       </div>
 
       <div class="user_intention_choose">
         <img class='user_intention' onclick="scrollToTop(urban_hybrid)"
         style=width:300px src =
         https://contents.mediadecathlon.com/p1985163/k$ce482bd7924c4be3165960c5ceffe88b/OLAIAN%20SURF%20confirme%20PE21%20homme%20femme.jpg?f=1000x1000>
-        <h3>Pavements</h3>
+        <button
+          class="user_intention_button"
+          onclick="scrollToTop(urban_hybrid)"
+        >
+          PARK CONNECTOR
+        </button>
       </div>
 
       <div class="user_intention_choose">
         <img class='user_intention' onclick="scrollToTop(mountain_biking)"
         style=width:300px src =
         https://contents.mediadecathlon.com/p2039755/k$a67dc9f02377ca65162d9de34d808bbb/ROCKRIDER%20PANTALON%20VTT%20ST%20500%20H%20BLK.jpg?f=1000x1000>
-        <h3>Off-Road Trails</h3>
+        <button
+          class="user_intention_button"
+          onclick="scrollToTop(mountain_biking)"
+        >
+          OFF-ROAD TRAIL
+        </button>
       </div>
 
       <div class="user_intention_choose">
         <img class='user_intention' onclick="scrollToTop(urban_hybrid)"
         style=width:300px src =
         https://contents.mediadecathlon.com/p2002864/k$d142cbad4a3f13dfd9b16dde22e3a742/ELOPS%20LD%20500%20F.jpg?f=1000x1000>
-        <h3>Roads & Pavement</h3>
+        <button
+          class="user_intention_button"
+          onclick="scrollToTop(urban_hybrid)"
+        >
+          ROAD & PCN
+        </button>
       </div>
 
       <div class="user_intention_choose">
         <img class='user_intention' onclick="scrollToTop(hybrid_cycling)"
         style=width:300px src =
         https://contents.mediadecathlon.com/p1962083/k$32bef88fa708dd63d9aa9c634d18a86c/TRIBAN%20VELO%20GRAVEL%20FEMME%20GRVLW120.jpg?f=1000x1000>
-        <h3>Roads & Off-Road</h3>
+        <button
+          class="user_intention_button"
+          onclick="scrollToTop(hybrid_cycling)"
+        >
+          ROAD & OFF-ROAD
+        </button>
       </div>
 
       <div class="user_intention_choose">
         <img class='user_intention' onclick="scrollToTop(hybrid_cycling)"
         style=width:300px src =
         https://contents.mediadecathlon.com/p1961273/k$aa0386d7eb5ab432ed3c53cb8a64c0a5/TRIBAN%20GRVL%20900%20TI%20LTD.jpg?f=1000x1000>
-        <h3>Pavement & Off-Road</h3>
+        <button
+          class="user_intention_button"
+          onclick="scrollToTop(hybrid_cycling)"
+        >
+          PCN & OFFROAD
+        </button>
       </div>
     </div>
 
@@ -283,7 +324,16 @@
 
       <div id="mountain_biking_style1" class="layer_div">
         <h3>Mountain Biking</h3>
-        <p>There are 4 official mountain bike trails or parks in Singapore.</p>
+        <p>
+          There are four mountain bike trails or parks in Singapore - Bukit
+          Timah, Chestnut Nature Park, Kent Ridge Park and Ketam Mountain Bike
+          Park in Pulau Ubin.
+        </p>
+        <p>
+          Each one offers varying levels of difficulty. To tackle them, we offer
+          three distinctive categories of bikes, each one catering to a
+          particular riding style
+        </p>
         <button onclick="scrollToTop(mtb_st)">SPORT TRAIL</button>
         <button onclick="scrollToTop(mtb_xc)">CROSS COUNTRY</button>
         <button onclick="scrollToTop(mtb_am)">ALL MOUNTAIN</button>
@@ -468,8 +518,8 @@
           PURIST: Caliper brakes, featherweight carbon frame<br />
           TECHNOLOGIST: Disc brakes, stiff alloy frame with the latest standards
         </p>
-        <button onclick="scrollToTop(divbike_rcr900af)">I AM A PURIST</button>
-        <button onclick="scrollToTop(divbike_rcr900cf)">
+        <button onclick="scrollToTop(divbike_rcr900cf)">I AM A PURIST</button>
+        <button onclick="scrollToTop(divbike_rcr900f)">
           I AM A TECHNOLOGIST
         </button>
         <button onclick="scrollToTop(road_racing)">GO BACK</button>
