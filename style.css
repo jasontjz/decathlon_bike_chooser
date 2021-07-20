@@ -3,12 +3,13 @@ body {
   text-align: center;
 }
 
-html,
+/* to prevent scrolling */
+/* html,
 body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-}
+} */
 
 #title {
   background-color: #0082c3;
@@ -116,7 +117,7 @@ h1 {
 #layer5_container,
 #layer6_container {
   display: inline-block;
-  background-color: white;
+  background-color: pink;
   width: 20000px;
   height: 1000px;
 }
@@ -131,9 +132,15 @@ h1 {
 #urban_hybrid {
   display: inline-block;
   background-color: white;
-  width: 1000px;
+  width: 800px;
   height: 500px;
   margin: 100px;
+}
+
+tr,
+td {
+  text-align: center;
+  padding: 20px;
 }
 
 #urban_cycling,
@@ -213,7 +220,7 @@ h1 {
 }
 
 .bike_specs_div {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: white;
   text-align: left;
