@@ -935,7 +935,9 @@ for (let i = 0; i < bikes.length; i++) {
   buttonBack.type = "button";
   buttonBack.className = "back";
   buttonBack.innerText = "GO BACK";
-  //   buttonDiv.appendChild(buttonBack);
+  buttonBack.id = bikes[i].backDiv + "_back";
+  buttonBack.setAttribute("data-backDiv", bikes[i].backDiv);
+  buttonDiv.appendChild(buttonBack);
   //create home button
   const buttonHome = document.createElement("button");
   buttonHome.type = "button";
@@ -945,17 +947,19 @@ for (let i = 0; i < bikes.length; i++) {
   buttonDiv.appendChild(buttonHome);
 }
 
-// function goBack(backDiv) {
-//   document.querySelector(backDiv).scrollIntoView({
-//     behavior: "smooth",
-//     block: "start",
-//     inline: "center",
-//   });
-// }
+function logBackButton(event) {
+  document
+    .querySelector("#" + event.target.getAttribute("data-backDiv"))
+    .scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
+}
 
-// document.querySelectorAll(".back").forEach((item) => {
-//   item.addEventListener("click", goBack());
-// });
+document.querySelectorAll(".back").forEach((item) => {
+  item.addEventListener("click", logBackButton);
+});
 
 function goHome() {
   document.querySelector("#title").scrollIntoView({

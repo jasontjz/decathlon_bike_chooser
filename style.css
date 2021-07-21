@@ -4,12 +4,12 @@ body {
 }
 
 /* to prevent scrolling */
-/* html,
+html,
 body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-} */
+}
 
 #title {
   background-color: #0082c3;
@@ -117,7 +117,7 @@ h1 {
 #layer5_container,
 #layer6_container {
   display: inline-block;
-  background-color: pink;
+  background-color: white;
   width: 20000px;
   height: 1000px;
 }
@@ -226,6 +226,7 @@ td {
   text-align: left;
   padding-left: 50px;
   padding-right: 40px;
+  white-space: nowrap;
 }
 
 .bike_div_title {
@@ -251,7 +252,7 @@ li {
 
 .slide {
   background-color: white;
-  width: 400px;
+  width: 500px;
   display: inline-block;
   margin-left: 500px;
   margin-right: 500px;
@@ -261,13 +262,13 @@ li {
 
 .active,
 .carousel-item {
-  width: 400px;
+  width: 500px;
   height: 800px;
   white-space: nowrap;
 }
 
 .carousel-inner {
-  width: 400px;
+  width: 500px;
   height: 800px;
 }
 
