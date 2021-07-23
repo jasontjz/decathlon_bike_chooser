@@ -4,12 +4,12 @@ body {
 }
 
 /* to prevent scrolling */
-/* html,
+html,
 body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-} */
+}
 
 #title {
   background-color: #0082c3;
@@ -18,11 +18,19 @@ body {
   text-align: center;
   width: auto;
   padding: 30px;
-  margin-bottom: 30px;
 }
 
 #image_carousel {
   margin-top: 20px;
+}
+.top_carousel_img {
+  width: 300px;
+}
+
+#carouselSlides {
+  text-align: center;
+  margin: 30px;
+  width: 600px;
 }
 
 #intro_main {
@@ -286,13 +294,17 @@ li {
 .active,
 .carousel-item {
   width: 500px;
-  height: 800px;
-  white-space: nowrap;
+  /* height: 800px; */
+  /* white-space: nowrap; */
+}
+
+.topcarousel-inner {
+  width: 800px;
 }
 
 .carousel-inner {
   width: 500px;
-  height: 800px;
+  /* height: 800px; */
 }
 
 .carousel-control-prev-icon {
@@ -325,6 +337,10 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.bottom_spacer {
+  height: 50px;
 }
 
 .cta,
@@ -394,6 +410,11 @@ a:link {
   .layer_images_triple {
     width: 200px;
   }
+  #carouselSlides {
+    text-align: center;
+    margin: 30px;
+    width: 450px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -460,6 +481,11 @@ a:link {
   }
   .button_triple {
     width: 100px;
+  }
+  #carouselSlides {
+    text-align: center;
+    margin: 10px;
+    width: 300px;
   }
 }
 

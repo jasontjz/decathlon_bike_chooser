@@ -2,6 +2,35 @@
 
 // alert("Welcome to the Decathlon Smart Bike Chooser! We will try our best to help you find the most suitable bike for your needs by asking you some simple questions. Sometimes, nothing beats the human touch, so if you are still unsure, we highly recommend you to talk to any of our friendly & passionate Sports Leaders :)")
 
+const top_carousel_inner = [
+  "https://contents.mediadecathlon.com/p2012687/k$5ec6b9e82de980a4e0f31e04bcfa45a3/ELOPS%20SIEGE%20BEBE%20100%20PORTE%20BAGAGES.jpg?f=1000x1000",
+  "https://contents.mediadecathlon.com/p1965420/k$3a89f25f6990d4cf393e1f907b4d2abf/TRIBAN%20TRIBAN%20REGULAR%20FEMME%20EMERAUDE.jpg?f=1000x1000",
+  "https://contents.mediadecathlon.com/p1563441/k$6408373248b59f8ad426d104a0577d4c/Riverside%20500%20C1%20Riverside%20500%20C2.jpg?f=1000x1000",
+  "https://contents.mediadecathlon.com/p1801274/k$ba1b90a167c49dc2195c26d687ca0f82/B%20TWIN%20VELO%20PLIANT%20TILT%20500%20BLEU.jpg?f=1000x1000",
+];
+
+//trying to create the carousell with JS only
+// for (let n = 0; n < top_carousel_inner.length; n++) {
+//   //create highest layer carousel
+//   const topCarousel_layer_0 = document.createElement("div");
+//   topCarousel_layer_0.id = top_carousel_inner[n] + "_layer_0";
+//   topCarousel_layer_0.className = "top_carousel slide";
+//   topCarousel_layer_0.setAttribute("data-bs-slide", "carousel");
+//   document.querySelector("#image_carousel").appendChild(topCarousel_layer_0);
+
+//   //create second layer carousel
+//   const topCarousel_layer_1 = document.createElement("div");
+//   topCarousel_layer_1.className = "carousel-inner";
+//   topCarousel_layer_1.id = top_carousel_inner[n];
+//   topCarousel_layer_0.appendChild(topCarousel_layer_1);
+
+//   //create image & append
+//   const topCarousel_layer_1_img = document.createElement("img");
+//   topCarousel_layer_1_img.src = top_carousel_inner[n];
+//   topCarousel_layer_1_img.className = "top_carousel_img";
+//   topCarousel_layer_1.appendChild(topCarousel_layer_1_img);
+// }
+
 const userNameArray = [];
 const userEmailArray = [];
 
@@ -945,6 +974,10 @@ for (let i = 0; i < bikes.length; i++) {
   buttonHome.innerText = "START OVER";
   buttonBack.target = document.querySelector("#title");
   buttonDiv.appendChild(buttonHome);
+  //create spacer
+  const bottomSpacer = document.createElement("div");
+  bottomSpacer.className = "bottom_spacer";
+  buttonDiv.appendChild(bottomSpacer);
 }
 
 function logBackButton(event) {
