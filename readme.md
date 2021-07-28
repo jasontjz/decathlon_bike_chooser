@@ -1,4 +1,4 @@
-This is the readme for the decathlon bike chooser
+This is the readme for the Decathlon Bike Chooser app that I have created for GA:SEIF 6 Project 1.
 
 The purpose of this app is to help Decathlon's customers in the store, or on their PC or phone, choose the right bicycle for their needs to help increase the retail & customer service staff's productivity by freeing them to focus on other operational tasks.
 
