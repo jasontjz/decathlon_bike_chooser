@@ -9,6 +9,8 @@ const top_carousel_inner = [
   "https://contents.mediadecathlon.com/p1801274/k$ba1b90a167c49dc2195c26d687ca0f82/B%20TWIN%20VELO%20PLIANT%20TILT%20500%20BLEU.jpg?f=1000x1000",
 ];
 
+console.log("test");
+
 //trying to create the carousell with JS only
 // for (let n = 0; n < top_carousel_inner.length; n++) {
 //   //create highest layer carousel
@@ -31,14 +33,21 @@ const top_carousel_inner = [
 //   topCarousel_layer_1.appendChild(topCarousel_layer_1_img);
 // }
 
-const userNameArray = [];
-const userEmailArray = [];
+// const userNameArray = [];
+// const userEmailArray = [];
+const userDataArray = [];
 
 function appendUser() {
-  userNameArray.push(document.querySelector("#username").value);
-  console.log(userNameArray);
-  userEmailArray.push(document.querySelector("#useremail").value);
-  console.log(userEmailArray);
+  // userNameArray.push(document.querySelector("#username").value);
+  // console.log(userNameArray);
+  // userEmailArray.push(document.querySelector("#useremail").value);
+  // console.log(userEmailArray);
+  const userData = {
+    name: document.querySelector("#username").value,
+    email: document.querySelector("#useremail").value,
+  };
+  userDataArray.push(userData);
+  console.log(userDataArray);
 }
 
 const letsroll = document.querySelector("#letsroll");
