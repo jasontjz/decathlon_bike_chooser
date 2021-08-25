@@ -1,0 +1,506 @@
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/* to prevent scrolling */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#title {
+  background-color: #0082c3;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  width: auto;
+  padding: 30px;
+}
+
+#image_carousel {
+  margin-top: 20px;
+}
+.top_carousel_img {
+  width: 300px;
+}
+
+#carouselSlides {
+  text-align: center;
+  margin: 30px;
+  width: 600px;
+}
+
+#intro_main {
+  background-color: #0082c3;
+  width: auto;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  padding: 30px;
+}
+
+#biodata-container {
+  margin: auto;
+  background-color: #0082c3;
+  color: white;
+  height: 100px;
+}
+
+#disclaimer {
+  font-size: 10px;
+  display: inline-block;
+  width: 400px;
+}
+.nomail {
+  display: inline-block;
+  vertical-align: top;
+}
+
+button {
+  background-color: #fceb05;
+  border-radius: 10px;
+  padding: auto;
+  width: 200px;
+  height: auto;
+  border: 0;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.user_intention_button {
+  margin-left: 30px;
+  border-radius: 7px;
+}
+
+.user_intention_choose {
+  display: inline-block;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#biodata_container {
+  margin: 20px;
+}
+
+.spacer {
+  background-color: white;
+  height: 1200px;
+}
+
+.user_intention {
+  width: 300px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.biodata_title {
+  margin: 10px;
+}
+
+.bike {
+  height: 200px;
+}
+
+#user_intention_container {
+  display: inline-block;
+  background-color: white;
+  width: 1200px;
+  padding: 30px;
+}
+/* #layer5_container,
+#layer6_container,
+#layer2_container,
+#layer3_container, */
+/* #layer4_container {
+  display: inline-block;
+  background-color: white;
+  width: 15000px;
+  height: 1000px;
+} */
+
+.layer_container {
+  display: inline-block;
+  background-color: white;
+  width: 30000px;
+  height: 1000px;
+  vertical-align: middle;
+}
+
+#urban_hybrid {
+  display: inline-block;
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+}
+.urban_hybrid_img {
+  width: 300px;
+}
+
+tr,
+td {
+  text-align: center;
+  padding: 20px;
+}
+
+.layer_images {
+  width: 500px;
+}
+
+.layer_images_dual {
+  width: 300px;
+}
+
+.layer_images_triple {
+  width: 300px;
+}
+
+.layer_div {
+  display: inline-block;
+  background-color: white;
+  width: 1000px;
+  height: 500px;
+  margin: 1000px;
+}
+
+/* #urban_cycling,
+#city_folding,
+#folding_bikes,
+#trad_city_bikes,
+#city_folding,
+#folding_bikes_style1,
+#trad_city_bikes_style1,
+#folding_bikes_style2,
+#trad_city_bikes_style2 {
+  display: inline-block;
+  background-color: white;
+  width: 1000px;
+  height: 500px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#hybrid_cycling,
+#hybrid_gate2_features,
+#hybrid_gate3b_rugged_flexible {
+  display: inline-block;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#road_cycling,
+#road_endurance,
+#road_racing,
+#road_cycling_style1,
+#road_endurance_style1,
+#road_racing_style1 {
+  display: inline-block;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#mountain_biking,
+#mountain_biking_style1,
+#mtb_st,
+#mtb_xc,
+#mtb_am {
+  display: inline-block;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  margin-left: 300px;
+  margin-right: 300px;
+} */
+
+#layer7_container {
+  display: inline-block;
+  background-color: white;
+  width: 29000px;
+  height: 1000px;
+  padding: 50px;
+}
+
+.bike_single,
+.bike_multiple {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  display: inline-block;
+  width: 400px;
+  height: 800px;
+  background-color: white;
+  margin: 10px;
+  white-space: nowrap;
+}
+
+.bike_specs_div {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 40px;
+  white-space: nowrap;
+}
+
+.bike_div_title {
+  display: block;
+}
+
+.bike_shortDesc {
+  white-space: normal;
+}
+
+.bike_div_img {
+  margin: auto;
+}
+
+ul {
+  margin-left: -30px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.slide {
+  background-color: white;
+  width: 500px;
+  display: inline-block;
+  margin-left: 500px;
+  margin-right: 500px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.active,
+.carousel-item {
+  width: 500px;
+  /* height: 800px; */
+  /* white-space: nowrap; */
+}
+
+.topcarousel-inner {
+  width: 800px;
+}
+
+.carousel-inner {
+  width: 500px;
+  /* height: 800px; */
+}
+
+.carousel-control-prev-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: black;
+  height: 5px;
+}
+
+.button_div {
+  text-align: center;
+  width: 300px;
+  height: 170px;
+  white-space: nowrap;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom_spacer {
+  height: 50px;
+}
+
+.cta,
+.back {
+  margin: auto;
+  display: block;
+  background-color: yellow;
+  min-width: 200px;
+  border-radius: 5px;
+  color: black;
+}
+
+.home {
+  margin: auto;
+  display: block;
+  background-color: #0082c3;
+  min-width: 200px;
+  border-radius: 5px;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1366px) {
+  #user_intention_container {
+    width: 800px;
+  }
+  .user_intention {
+    width: 200px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .user_intention_choose {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  .urban_hybrid_img {
+    width: 200px;
+  }
+  #urban_hybrid {
+    display: inline-block;
+
+    width: 800px;
+    height: 500px;
+    margin: auto;
+  }
+  .layer_div {
+    display: inline-block;
+
+    width: 800px;
+    height: 500px;
+    margin: 1000px;
+    vertical-align: bottom;
+  }
+  .layer_images {
+    width: 500px;
+  }
+
+  .layer_images_dual {
+    width: 300px;
+  }
+
+  .layer_images_triple {
+    width: 200px;
+  }
+  #carouselSlides {
+    text-align: center;
+    margin: 30px;
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #user_intention_container {
+    width: 500px;
+  }
+  .user_intention {
+    width: 100px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .user_intention_choose {
+    display: inline-block;
+    margin: 5px;
+    width: 250px;
+    text-align: center;
+  }
+  .user_intention_button {
+    font-size: 10px;
+    border-radius: 7px;
+    width: 80px;
+    height: 40px;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+  #urban_hybrid {
+    display: inline-block;
+
+    width: 500px;
+    height: 500px;
+    margin: auto;
+  }
+  .urban_hybrid_img {
+    width: 150px;
+  }
+  #urban_hybrid_table {
+    width: 500px;
+  }
+
+  .layer_div {
+    display: inline-block;
+
+    width: 450px;
+    height: 500px;
+    margin: 1000px;
+  }
+  .layer_images {
+    width: 300px;
+  }
+
+  .layer_images_dual {
+    width: 200px;
+  }
+
+  .layer_images_triple {
+    width: 100px;
+  }
+  p {
+    font-size: 12px;
+  }
+  table {
+    font-size: 12px;
+    width: 450px;
+  }
+  .button_triple {
+    width: 100px;
+  }
+  #carouselSlides {
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+  }
+}
+
+/* .zoomButton {
+    background-color: red;
+    color: white;
+    margin-top: 10px
+}
+
+.somewhere-div {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+} */
