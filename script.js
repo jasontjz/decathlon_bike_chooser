@@ -4,6 +4,8 @@
 
 // alert("Welcome to the Decathlon Smart Bike Chooser! We will try our best to help you find the most suitable bike for your needs by asking you some simple questions. Sometimes, nothing beats the human touch, so if you are still unsure, we highly recommend you to talk to any of our friendly & passionate Sports Leaders :)")
 
+//delete the email!
+
 const top_carousel_inner = [
   "https://contents.mediadecathlon.com/p2012687/k$5ec6b9e82de980a4e0f31e04bcfa45a3/ELOPS%20SIEGE%20BEBE%20100%20PORTE%20BAGAGES.jpg?f=1000x1000",
   "https://contents.mediadecathlon.com/p1965420/k$3a89f25f6990d4cf393e1f907b4d2abf/TRIBAN%20TRIBAN%20REGULAR%20FEMME%20EMERAUDE.jpg?f=1000x1000",
